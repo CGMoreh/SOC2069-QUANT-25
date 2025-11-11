@@ -158,11 +158,11 @@
     "href": "Materials/Info/info_w4.html",
     "title": "Modelling dichotomous outcomes",
     "section": "",
-    "text": "In the social sciences we are often confronted with phenomena and concepts measured not on a numeric scale but on a categorical scale. Linear regression analysis has provided us with a general approach which can be generalised to categorical dependent variables, but this generalisation relies on a mathematical transformation of the dependent variable using the natural logarithm. Luckily, we have powerful software to take care of these transformations for us, and we can instead focus on understanding the sociological importance of estimating the probability of cases (people) with certain characteristics to belong to one outcome category as opposed to another.  We will focus on the basic case where there are only two (dichotomous, binary) outcome categories, which can be modelled using logistic regression, another versatile and foundational statistical method that is probably the most commonly employed in sociological research.\n\n\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 5 | Modelling Relationships Using Regression (reading from section Different Types of Response Variable)\nCHAPTER 6 | Algorithms, Analytics and Prediction\nCHAPTER 8 | Probability – the Language of Uncertainty and Variability\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nLOGISTIC REGRESSION (pp. 88-92)\n\n\nApplication:\n\nDelhey, Jan, and Kenneth Newton (2003) “Who Trusts?: The Origins of Social Trust in Seven Societies.” European Societies 5(2): 93–137.\n\n\n\n\nStatistics:\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 9 (“Logistic regression”)\n\nConnelly, Roxanne, Vernon Gayle, and Paul S. Lambert (2016) “Statistical Modelling of Key Variables in Social Survey Data Analysis”. Methodological Innovations9:205979911663800.\n\nAdvanced topics:\n\nMood, Carina (2010) “Logistic Regression: Why We Cannot Do What We Think We Can Do, and What We Can Do About It.” European Sociological Review 26(1): 67–82.\nBreen, Richard, Kristian Bernt Karlson, and Anders Holm (2018) “Interpreting and Understanding Logits, Probits, and Other Nonlinear Probability Models.” Annual Review of Sociology 44(1): 39–54.\n\n\n\n\n\n Download the slides",
+    "text": "In the social sciences we are often confronted with phenomena and concepts measured not on a numeric scale but on a categorical scale. Linear regression analysis has provided us with a general approach which can be generalised to categorical dependent variables, but this generalisation relies on a mathematical transformation of the dependent variable using the natural logarithm. Luckily, we have powerful software to take care of these transformations for us, and we can instead focus on understanding the sociological importance of estimating the probability of cases (people) with certain characteristics to belong to one outcome category as opposed to another.  We will focus on the basic case where there are only two (dichotomous, binary) outcome categories, which can be modelled using logistic regression, another versatile and foundational statistical method that is probably the most commonly employed in sociological research.",
     "crumbs": [
       "Materials",
       "Workshop 4",
-      "[W4] Info and Slides"
+      "[W4] Description and Readings"
     ]
   },
   {
@@ -194,11 +194,11 @@
     "href": "Materials/Info/info_w2.html",
     "title": "Comparisons and Associations",
     "section": "",
-    "text": "Drawing comparisons and identifying associations between variables underpins most quantitative sociological analyses. While in Workshop 1 we practiced describing variables individually, we now focus on describing variables in relation to one another. We make further steps in understanding the concept of “social trust” by exploring various factors that appear associated with it. Identifying associations and patterns in a dataset, and setting up new research hypothesis based on them is often the most that we can realistically do with our data.\nMost often than not, however, our true aim is to set up a statistical model that can be used for making predictions or testing causal relationships about our phenomenon of interest. We will explore these aims and their limits over the next two workshops in exploring how we can make more directed comparisons and identify cleaner associations using regression techniques.\n\n\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 2 | Summarizing and Communicating Numbers. Lots of Numbers (continue reading from the section on Describing Relationships Between Variables)\nCHAPTER 4 | What Causes What?\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement (recommended now, essential by Workshop 5)\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nDESCRIPTIVE DATA VISUALISATION (pp. 21-30)\nEXPLORING DATA INTEGRITY (pp. 30-37)\nDATA TRANSFORMATION (pp. 38-41)\nCOMPARING TWO INDEPENDENT GROUPS (pp. 56-63)\nCOMPARING TWO RELATED GROUPS (pp. 63-69)\nCORRELATION ANALYSIS (pp. 69-75)\nCHI-SQUARE TEST FOR ASSOCIATION (pp. 145-152)\n\n\nApplication:\n\nChapter 4 (“Community life and social relations”, pp. 49-62) in Wilkinson and Pickett (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press.\nDelhey, Jan, and Kenneth Newton. 2005. “Predicting Cross-National Levels of Social Trust: Global Pattern or Nordic Exceptionalism?” European Sociological Review 21(4): 311–27.\n\n\n\n\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 9 (“The t Test”)\nChapter 10 (“Analysis of Variance”)\nChapter 11 (“Correlation Coefficients”)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 4 (“Exploring categorical data”)\nChapter 5 (“Exploring numerical data”)\n\n\nSubstantive:\n\nDinesen, Peter Thisted, and René Bekkers. 2017. “The Foundations of Individuals’ Generalized Social Trust: A Review.” Pp. 77–100 in Trust in Social Dilemmas, edited by P. A. M. van Lange, B. Rockenbach, and T. Yamagishi. New York, NY: Oxford University Press.\n\n\n\n\n\n Download the slides",
+    "text": "Drawing comparisons and identifying associations between variables underpins most quantitative sociological analyses. While in Workshop 1 we practiced describing variables individually, we now focus on describing variables in relation to one another. We make further steps in understanding the concept of “social trust” by exploring various factors that appear associated with it. Identifying associations and patterns in a dataset, and setting up new research hypothesis based on them is often the most that we can realistically do with our data.\nMost often than not, however, our true aim is to set up a statistical model that can be used for making predictions or testing causal relationships about our phenomenon of interest. We will explore these aims and their limits over the next two workshops in exploring how we can make more directed comparisons and identify cleaner associations using regression techniques.",
     "crumbs": [
       "Materials",
       "Workshop 2",
-      "[W2] Info and Slides"
+      "[W2] Description and Readings"
     ]
   },
   {
@@ -261,14 +261,14 @@
     "href": "Data/index.html",
     "title": "Quantitative Datasets",
     "section": "",
-    "text": "Workshop data\n\n\n\n\n\n\n Questions of Trust\n\n\n\n\n\nThis is a collection of six small datasets compiled from original sources to exemplify several different ways in which the “social trust” / “generalised trust” question has been asked in social surveys. The datasets are helpful for thinking through questions about concept measurement similar to those asked by Bekkers and Sandberg (2019).\nThe focus of the datasets is on a single country: Great Britain / United Kingdom. The original datasets have been reduced to a small number of variables: (1) respondent ID number; (2) questionnaire subsample (if relevant and available); (3) age (both numeric and categorical (7 categories) where available); (4) sex; (5) and social trust. The order of the variables in the dataset, variable names and labels, and value/category codes and labels - including missing values - were left as in the original surveys (the only exception is the gb-cls23-trust_nm dataset, where the missing values have been excluded due to the large size of the original file - over 100,000 rows - which cannot be opened by JASP). The datasets can be downloaded in .sav (SPSS) format and loaded directly in JASP or R.\nThe available datasets and their original sources are:\n\nBritish Social Attitudes Survey 2024 (gb-bsa24-trust.sav)\nBritish Social Attitudes Survey 2023 (gb-bsa23-trust.sav)\nBritish Social Attitudes Survey 2010 (gb-bsa10-trust.sav)\nCommunity Life Survey 2023-24 (gb-cls23-trust_nm.sav)\nCitizenship Survey 2010-11 (gb-cs10-trust.sav)\nEuropean Social Survey, Round 11, 2023-24 (UK sample) (gb-ess11-trust.sav)\n\n\n Download\n\n\n\nBritish Social Attitudes Survey 2024\n\n\nBritish Social Attitudes Survey 2023\n\n\nBritish Social Attitudes Survey 2010\n\n\nCommunity Life Survey 2023-24\n\n\nCitizenship Survey 2010-11\n\n\nEuropean Social Survey 11, 2023-24\n\n\n\n\n\n\n\n\n\n\n\n Trust & Inequality   |   trust_inequality.dta\n\n\n\n\n\nThis dataset combines data on “generalised/social trust” from the latest waves of the World Values Survey and the European Values Study with macro(country)-level data on World Development Indicators (WDI) provided by the World Bank. The main variables of interest taken from the WDI refer to measurements of economic inequality within countries. The dataset allows us to conceptually replicate - using the latest available data - the analysis of the relationship between inequality and trust presented in Chapter 4 (“Community life and social relations”, pp. 49-62) of Wilkinson and Pickett (2010).\n Download\n\n\n\n\n\n\n\n\n\n Österman, Table 3   |   osterman_t3.dta\n\n\n\n\n\nThis dataset is the one used by Österman (2021) for the analysis underpinning the results reported in his Table 3 and related tables in the Online Supplementary Material. The aim of the article is to use information on educational reforms across European countries as a way to set up a quasi-experimental design testing the effect of education on social trust. With this approach, it aims to overcome the limitations of cross-sectional observational survey data from the European Social Survey by attempting a causal - rather than just correlational- explanation.\n Download\n\n\n\n\n\n\n\n\n\n Delhey & Newton, 2003   |   delhey&newton2003.sav\n\n\n\n\n\nThis dataset contains data from the EUROMODULE (1999-2002) surveys conducted in nine countries: Germany (DE) | Austria (AT) | Switzerland (CH) | Sweden (SE) | Spain (ES) | Slovenia (SI) | Korea, Republic of (KR) | Turkey (TR) | Hungary (HU). Out of the total of 366 variables measured, only those 100 were kept in this dataset that were used by Delhey and Newton (2003) in their analysis of the various correlates of “social trust”. The value of the EUROMODULE survey data compared to other comparative surveys that measure social trust is that it offers a much greater variety of explanatory variables that allow Delhey and Newton (2003) to test the relative explanatory power of several complex social theories explaining differences in levels of social trust both at the individual level and at the macro-social level.\n Download   Original questionnaire    Original Codebook    Data wrangling code (.R) \n\n\n\n\n\n\n\n\n\n Data transformation   |   data_transformation.jasp\n\n\n\n\n\nThis is a toy dataset derived from the European Social Survey, Round 10 (ESS10). Its aim is to be used to demonstrate several basic data transformation procedures in JASP. It contains 15 cases/observations/rows and 12 variables/features/columns (in addition to a Respondent ID variable). The cases were selected so as to include some missing values and reasonable variation across the selected variables.\nThe dataset should be used in conjunction with the ESS10 Questionnaire and Codebook.\nThis dataset is used in some of the data management example short videos available on this JASP tutorial YouTube playlist.\n Download\n\n\n\n\n\nAssignment data\nYou will use one of the datasets available below for your assignment task. These are real-life data from large-scale nationally representative surveys that include variables relating to the research questions posted on Canvas. To make the data more manageable (and because the module cannot cover some very important but more advanced topics such as clustering standard errors and multi-level modelling of cross-country data, or applying survey weights) the datasets are broken down by country and contain only a small selection of the variables available from the original surveys.\n\n\n\n\n\n\n World Values Survey, Wave 7   |   wvs7_XXX.sav\n\n\n\n\n\nThe World Values Survey (WVS) is an international research program devoted to the scientific and academic study of social, political, economic, religious and cultural values of people in the world. The project grew out of the European Values Study and was started in 1981. Since then it has been operating in more than 120 world societies. The main research instrument of the project is a representative comparative social survey which is conducted globally every 5 years. The datasets below come from Wave 7 (2017-2022) data, which comprised 66 countries/territories. The majority of surveys were completed in 2018-2020 with only about a dozen countries conducting their fieldwork since the Covid-19 pandemic outbreak in 2021-2022. The last included survey comes from India and was completed in July 2023.\nYou should cite the original data source in your assignments as:\n\nHaerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano J., M. Lagos, P. Norris, E. Ponarin & B. Puranen (eds.) (2022). World Values Survey: Round Seven. Datafile Version 5.0. Madrid, Spain & Vienna, Austria: JD Systems Institute & WVSA Secretariat. doi:10.14281/18241.24\n\n\n Download (single-country)\n\n\n\nAndorra\n\n\nArgentina\n\n\nArmenia\n\n\nAustralia\n\n\nBangladesh\n\n\nBolivia\n\n\nBrazil\n\n\nCanada\n\n\nChile\n\n\nChina\n\n\nColombia\n\n\nCyprus\n\n\nCzechia\n\n\nGermany\n\n\nEcuador\n\n\nEgypt\n\n\nEthiopia\n\n\n\nGreece\n\n\nGuatemala\n\n\nHong Kong SAR\n\n\nIndonesia\n\n\nIndia\n\n\nIran\n\n\nIraq\n\n\nJordan\n\n\nJapan\n\n\nKazakhstan\n\n\nKenya\n\n\nKyrgyzstan\n\n\nSouth Korea\n\n\nLebanon\n\n\nLibya\n\n\nMacau SAR\n\n\nMorocco\n\n\nMaldives\n\n\nMexico\n\n\nMyanmar\n\n\nMongolia\n\n\nMalaysia\n\n\nNigeria\n\n\nNicaragua\n\n\nNetherlands\n\n\nNew Zealand\n\n\nPakistan\n\n\nPeru\n\n\nPhilippines\n\n\nPuerto Rico\n\n\nRomania\n\n\nRussia\n\n\nSingapore\n\n\nSerbia\n\n\nSlovakia\n\n\nThailand\n\n\nTajikistan\n\n\nTunisia\n\n\nTurkey\n\n\nTaiwan ROC\n\n\nUkraine\n\n\nUruguay\n\n\nUnited States\n\n\nUzbekistan\n\n\nVenezuela\n\n\nVietnam\n\n\nZimbabwe\n\n\n\n Original questionnaire\n\n\n Original Codebook\n\n\n Data wrangling code (.R)\n\n\n\n\n\n\n\n\n\n\n European Values Study, 2017   |   evs2017_XXX.sav\n\n\n\n\n\nThe European Values Study (EVS) is a large-scale, cross-national and longitudinal survey research program on how Europeans think about family, work, religion, politics, and society. Repeated every nine years in an increasing number of countries, the survey provides insights into the ideas, beliefs, preferences, attitudes, values, and opinions of citizens all over Europe. The latest (fifth) wave of the survey, EVS 2017, was conducted in 37 participating countries.\nYou should cite the original data source in your assignments as:\n\nEVS (2022). European Values Study 2017: Integrated Dataset (EVS 2017). GESIS, Cologne. ZA7500 Data file Version 5.0.0, https://doi.org/10.4232/1.13897.\n\n\n Download (single-country)\n\n\n\nAlbania\n\n\nAzerbaijan\n\n\nAustria\n\n\nArmenia\n\n\nBosnia and Herzegovina\n\n\nBulgaria\n\n\nBelarus\n\n\nCroatia\n\n\nCzechia\n\n\nDenmark\n\n\nEstonia\n\n\nFinland\n\n\nFrance\n\n\nGeorgia\n\n\nGermany\n\n\nHungary\n\n\nIceland\n\n\nItaly\n\n\nLatvia\n\n\nLithuania\n\n\nMontenegro\n\n\nNetherlands\n\n\nNorway\n\n\nPoland\n\n\nPortugal\n\n\nRomania\n\n\nRussia\n\n\nSerbia\n\n\nSlovakia\n\n\nSlovenia\n\n\nSpain\n\n\nSweden\n\n\nSwitzerland\n\n\nUkraine\n\n\nNorth Macedonia\n\n\n\n\n Original questionnaire\n\n\n Original Codebook\n\n\n Data wrangling code (.R)\n\n\n\n\n\n\n\n\n\n\n European Social Survey, 10   |   ess10_XXX.sav\n\n\n\n\n\nThe European Social Survey (ESS) is an academically driven cross-national survey that has been conducted across Europe since 2001. Every two years, face-to-face interviews are conducted with newly selected, cross-sectional samples.The survey measures the attitudes, beliefs and behaviour patterns of diverse populations and has been administered in 40 countries to date. ESS data collection is based on an hour-long face-to-face interview. The tenth ESS round covers 31 countries.\nYou should cite the original data source in your assignments as:\n\nEuropean Social Survey European Research Infrastructure (ESS ERIC) (2023). ESS10 integrated file, edition 3.2 [Data set]. Sikt - Norwegian Agency for Shared Services in Education and Research. https://doi.org/10.21338/ess10e03_2\n\n\n Download (single-country)\n\n\n\nBelgium\n\n\nBulgaria\n\n\nSwitzerland\n\n\nCzechia\n\n\nEstonia\n\n\nFinland\n\n\nFrance\n\n\n\nGreece\n\n\nCroatia\n\n\nHungary\n\n\nIreland\n\n\nIceland\n\n\nItaly\n\n\nLithuania\n\n\nMontenegro\n\n\nNorth Macedonia\n\n\nNetherlands\n\n\nNorway\n\n\nPortugal\n\n\nSlovenia\n\n\nSlovakia\n\n\n\n Original questionnaire\n\n\n Original Codebook\n\n\n Data wrangling code (.R)\n\n\n\n\n\n\n\n\n\n\n Variable search\n\n\n\n\n\nUse the search table below to quickly check what variables are available in which survey dataset. In the Search field you can search for any keyword; in the Show [ ] entries field you can select to display more/all variables:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences\n\nBekkers R and Sandberg B (2019) Grading Generalized Trust Across Europe. In: André S, Kraaykamp G, Meuleman R, et al. (eds.) Samenhang in Europa: Eenheid in Verscheidenheid. Proceedings Zesde Nederlandse Workshop European Social Survey. The Hague, pp. 97–119. Available at: https://osf.io/c9mq4/ (accessed 19 February 2024).\n\n\nDelhey J and Newton K (2003) Who trusts?: The origins of social trust in seven societies. European Societies 5(2). Routledge: 93–137.\n\n\nÖsterman M (2021) Can we trust education for fostering trust? Quasi-experimental evidence on the effect of education and tracking on social trust. Social Indicators Research 154(1): 211–233.\n\n\nWilkinson RG and Pickett K (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press."
+    "text": "Questions of Trust\n\n\n\n\n\nThis is a collection of six small datasets compiled from original sources to exemplify several different ways in which the “social trust” / “generalised trust” question has been asked in social surveys. The datasets are helpful for thinking through questions about concept measurement similar to those asked by Bekkers and Sandberg (2019).\nThe focus of the datasets is on a single country: Great Britain / United Kingdom. The original datasets have been reduced to a small number of variables: (1) respondent ID number; (2) questionnaire subsample (if relevant and available); (3) age (both numeric and categorical (7 categories) where available); (4) sex; (5) and social trust. The order of the variables in the dataset, variable names and labels, and value/category codes and labels - including missing values - were left as in the original surveys (the only exception is the gb-cls23-trust_nm dataset, where the missing values have been excluded due to the large size of the original file - over 100,000 rows - which cannot be opened by JASP). The datasets can be downloaded in .sav (SPSS) format and loaded directly in JASP or R.\nThe available datasets and their original sources are:\n\nBritish Social Attitudes Survey 2024 (gb-bsa24-trust.sav)\nBritish Social Attitudes Survey 2023 (gb-bsa23-trust.sav)\nBritish Social Attitudes Survey 2010 (gb-bsa10-trust.sav)\nCommunity Life Survey 2023-24 (gb-cls23-trust_nm.sav)\nCitizenship Survey 2010-11 (gb-cs10-trust.sav)\nEuropean Social Survey, Round 11, 2023-24 (UK sample) (gb-ess11-trust.sav)\n\n\n Download\n\n\n\nBritish Social Attitudes Survey 2024\n\n\nBritish Social Attitudes Survey 2023\n\n\nBritish Social Attitudes Survey 2010\n\n\nCommunity Life Survey 2023-24\n\n\nCitizenship Survey 2010-11\n\n\nEuropean Social Survey 11, 2023-24\n\n\n\n\n\n\n\n\n\n\n\n Trust & Inequality   |   trust_inequality.dta\n\n\n\n\n\nThis dataset combines data on “generalised/social trust” from the latest waves of the World Values Survey and the European Values Study with macro(country)-level data on World Development Indicators (WDI) provided by the World Bank. The main variables of interest taken from the WDI refer to measurements of economic inequality within countries. The dataset allows us to conceptually replicate - using the latest available data - the analysis of the relationship between inequality and trust presented in Chapter 4 (“Community life and social relations”, pp. 49-62) of Wilkinson and Pickett (2010).\n Download\n\n\n\n\n\n\n\n\n\n Österman, Table 3   |   osterman_t3.dta\n\n\n\n\n\nThis dataset is the one used by Österman (2021) for the analysis underpinning the results reported in his Table 3 and related tables in the Online Supplementary Material. The aim of the article is to use information on educational reforms across European countries as a way to set up a quasi-experimental design testing the effect of education on social trust. With this approach, it aims to overcome the limitations of cross-sectional observational survey data from the European Social Survey by attempting a causal - rather than just correlational- explanation.\n Download\n\n\n\n\n\n\n\n\n\n Delhey & Newton, 2003   |   delhey&newton2003.sav\n\n\n\n\n\nThis dataset contains data from the EUROMODULE (1999-2002) surveys conducted in nine countries: Germany (DE) | Austria (AT) | Switzerland (CH) | Sweden (SE) | Spain (ES) | Slovenia (SI) | Korea, Republic of (KR) | Turkey (TR) | Hungary (HU). Out of the total of 366 variables measured, only those 100 were kept in this dataset that were used by Delhey and Newton (2003) in their analysis of the various correlates of “social trust”. The value of the EUROMODULE survey data compared to other comparative surveys that measure social trust is that it offers a much greater variety of explanatory variables that allow Delhey and Newton (2003) to test the relative explanatory power of several complex social theories explaining differences in levels of social trust both at the individual level and at the macro-social level.\n Download   Original questionnaire    Original Codebook    Data wrangling code (.R) \n\n\n\n\n\n\n\n\n\n Data transformation   |   data_transformation.jasp\n\n\n\n\n\nThis is a toy dataset derived from the European Social Survey, Round 10 (ESS10). Its aim is to be used to demonstrate several basic data transformation procedures in JASP. It contains 15 cases/observations/rows and 12 variables/features/columns (in addition to a Respondent ID variable). The cases were selected so as to include some missing values and reasonable variation across the selected variables.\nThe dataset should be used in conjunction with the ESS10 Questionnaire and Codebook.\nThis dataset is used in some of the data management example short videos available on this JASP tutorial YouTube playlist.\n Download"
   },
   {
     "objectID": "Materials/index.html",
     "href": "Materials/index.html",
     "title": "",
     "section": "",
-    "text": "Workshop\nTopic\nInfo\nNotes\nSlides\nWorksheets\n\n\n\n\n\nSoftware\n\n\n  \n\n\n\n\nIntroduction: Statistics, data and models\n\n\n  \n\n\n\nWorkshop 1\nMeasurement and Description\n\n  \n\n\n\n\nWorkshop 2\nComparisons and Associations\n\n  \n  \n  \n\n\nWorkshop 3\nModelling continuous outcomes\n\n  \n  \n  \n\n\nWorkshop 4\nModelling binary outcomes\n\n  \n  \n  \n\n\nWorkshop 5\nUncertainty and Inference",
+    "text": "Workshop\nTopic\nInfo + readings\nSlides + notes\nWorksheets\n\n\n\n\n\nSoftware\n\n\n\n\n\n\nIntroduction: Statistics, data and models\n\n\n\n\n\nWorkshop 1\nMeasurement and Description\n\n\n\n\n\nWorkshop 2\nComparisons and Associations\n\n\n  \n\n\nWorkshop 3\nModelling continuous outcomes\n\n\n  \n\n\nWorkshop 4\nModelling binary outcomes\n\n\n  \n\n\nWorkshop 5\nUncertainty and Inference",
     "crumbs": [
       "Materials",
       "Outline and materials"
@@ -279,11 +279,11 @@
     "href": "Materials/Info/info_w1.html",
     "title": "Measurement and Description",
     "section": "",
-    "text": "We begin our exploration of quantitative methods in sociology (and the social sciences more broadly) by thinking carefully about how we make the passage from theory and concepts to empirical data. For concepts to be explored empirically (not just theoretically), we need to operationalise them. The lecture introduces some core ideas behind social measurement in general. In the IT workshop, we will look more carefully at examples of how “social trust” has been conceptualised, operationalised and measured in practice.\nOnce empirical data have been collected, a first step in their analysis is to explore and describe the recorded variables using appropriate descriptive statistics. It may be that our research question is a very simple one and the whole purpose of the research was to describe the distribution of a measured concept or phenomenon. In most cases, however, descriptive statistics are but the first – albeit essential – step in the analytic process. In real-life research scenarios, we are more interested in drawing comparisons between cases and identifying associations (relationships) between various concepts and phenomena. That will be the topic of workshop 3.\n\n\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 1 | Getting Things in Proportion: Categorical Data and Percentages\nCHAPTER 2 | Summarizing and Communicating Numbers. Lots of Numbers (read until the section on Describing Relationships Between Variables)\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement (recommended now, essential by Workshop 5)\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nUSING THE JASP ENVIRONMENT (pp. 2-7)\nDATA HANDLING IN JASP (pp. 8-10)\nJASP ANALYSIS MENU (pp. 12-15)\nDESCRIPTIVE STATISTICS (pp. 15-21)\nBASIC PLOTS (pp. 21-24)\n\n\nApplication:\n\nBekkers, René, and Bart Sandberg. 2019. “Grading Generalized Trust Across Europe”, Pp. 97-119 in: André, S., Kraaykamp, G., Meuleman, R. & Wittenberg, M. (Eds). Samenhang in Europa: eenheid in verscheidenheid. Proceedings zesde Nederlandse Workshop European Social Survey, The Hague, 16 March 2018.\n\n\n\n\nOn trust:\n\nDelhey, Jan, Kenneth Newton, and Christian Welzel. 2011. “How General Is Trust in ‘Most People’? Solving the Radius of Trust Problem.” American Sociological Review 76(5): 786–807.\nRobbins, Blaine G. 2022. “Measuring Generalized Trust: Two New Approaches.” Sociological Methods & Research 51(1): 305–56.\nRobbins, Blaine G. 2024. “An Empirical Comparison of Four Generalized Trust Scales: Test–Retest Reliability, Measurement Invariance, Predictive Validity, and Replicability.” Sociological Methods & Research 53(2): 760–803.\nUslaner, E. M. 2012. Chapter 7 (“Measuring generalized trust: in defense of the ‘standard’ question”, pp. 72-82) in Lyon, Fergus, Guido Möllering, and M. N. K. Saunders, eds. 2012. Handbook of Research Methods on Trust. Northampton, Mass: Edward Elgar Pub.\n\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nSection II: Describing Univariate Data (pp. 42-83)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 1 (“Data”)\nChapter 2 (“Study design”)\n\nStevens, S. S. 1946. “On the Theory of Scales of Measurement.” Science 103(2684): 677–80.\nDuncan, Otis Dudley. 1984. Notes on Social Measurement: Historical and Critical. New York: Russell Sage Foundation. (especially Chapter 4 discussing and criticising Stevens (1946))\n\n\n\n\n\n Download the slides",
+    "text": "We begin our exploration of quantitative methods in sociology (and the social sciences more broadly) by thinking carefully about how we make the passage from theory and concepts to empirical data. For concepts to be explored empirically (not just theoretically), we need to operationalise them. The lecture introduces some core ideas behind social measurement in general. In the IT workshop, we will look more carefully at examples of how “social trust” has been conceptualised, operationalised and measured in practice.\nOnce empirical data have been collected, a first step in their analysis is to explore and describe the recorded variables using appropriate descriptive statistics. It may be that our research question is a very simple one and the whole purpose of the research was to describe the distribution of a measured concept or phenomenon. In most cases, however, descriptive statistics are but the first – albeit essential – step in the analytic process. In real-life research scenarios, we are more interested in drawing comparisons between cases and identifying associations (relationships) between various concepts and phenomena. That will be the topic of workshop 3.",
     "crumbs": [
       "Materials",
       "Workshop 1",
-      "[W1] Info and Slides"
+      "[W1] Description and Readings"
     ]
   },
   {
@@ -315,11 +315,11 @@
     "href": "Materials/Info/info_w3.html",
     "title": "Modelling continuous outcomes",
     "section": "",
-    "text": "Linear regression modelling is one of the most ubiquitous methods applied in the social sciences. It applies to cases where the phenomenon we aim to understand and describe (model) is ideally measured on a continuous numeric scale. This will be our “dependent” or “outcome” variable (our “explanandum”, the variable we want to explain). Regression modelling allows us to quantify the association between one or several explanatory (“independent”) variables and our outcome variable. This allows us to summarise associations and draw comparisons in our data more efficiently and to establish testable hypotheses about potential causal relationships. In the workshop we will scratch the surface of this versatile and foundational statistical method.\n\n\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 5 | Modelling Relationships Using Regression\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nREGRESSION (pp. 75-88)\n\n\nApplication:\n\nChapter 4 (“Community life and social relations”, pp. 49-62) in Wilkinson and Pickett (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press.\nDelhey, Jan, and Kenneth Newton. 2005. “Predicting Cross-National Levels of Social Trust: Global Pattern or Nordic Exceptionalism?” European Sociological Review 21(4): 311–27.\nÖsterman, Marcus. 2021.“Can We Trust Education for Fostering Trust? Quasi-Experimental Evidence on the Effect of Education and Tracking on Social Trust.” Social Indicators Research 154(1): 211–33.\n\nPlus, the Electronic supplementary material: https://link.springer.com/article/10.1007/s11205-020-02529-y#Sec15\n\n\n\n\n\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 11 (“Correlation Coefficients”)\nChapter 12 (“Linear regression”)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 7 (“Linear regression with a single predictor”)\nChapter 8 (“Linear regression with multiple predictors”)\n\n\nAdvanced topics:\n\nClark, William Roberts, and Matt Golder. 2023. Interaction Models: Specification and Interpretation. Cambridge: Cambridge University Press.\n\n\n\n\n\n Download the slides",
+    "text": "Linear regression modelling is one of the most ubiquitous methods applied in the social sciences. It applies to cases where the phenomenon we aim to understand and describe (model) is ideally measured on a continuous numeric scale. This will be our “dependent” or “outcome” variable (our “explanandum”, the variable we want to explain). Regression modelling allows us to quantify the association between one or several explanatory (“independent”) variables and our outcome variable. This allows us to summarise associations and draw comparisons in our data more efficiently and to establish testable hypotheses about potential causal relationships. In the workshop we will scratch the surface of this versatile and foundational statistical method.",
     "crumbs": [
       "Materials",
       "Workshop 3",
-      "[W3] Info and Slides"
+      "[W3] Description and Readings"
     ]
   },
   {
@@ -351,11 +351,11 @@
     "href": "Materials/Info/info_w5.html",
     "title": "Uncertainty and Inference",
     "section": "",
-    "text": "To build up empirical intuition about data, comparisons, and the mechanics of regression modelling, in previous workshops we have focused on understanding the calculation and interpretation of regression coefficients. These ‘point estimates’ may appear as reliable and certain answers to concrete research (sub)questions, but in fact they are a well-intended guess mired in uncertainty. Can they really tell us something reliable about the phenomenon under study in our population of interest, beyond the sample of data that we used to calculate them? Here’s where it becomes essential to develop our understanding of statistical theory that we have so far avoided. Thinking carefully about probability, uncertainty and the challenges of drawing inferences beyond one’s available data will help better understand our – and other researchers’ – results and the claims that can be made on their back.\n\n\n(Access links through Canvas - Newcastle University login required)\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement\nCHAPTER 7 | How Sure Can We Be About What Is Going On? Estimates and Intervals\nCHAPTER 9 | Putting Probability and Statistics Together\nCHAPTER 10 | Answering Questions and Claiming Discoveries\n\n\n\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data: (Access through Canvas - Newcastle University login required)\n\nCHAPTER 11 | Learning from Experience the Bayesian Way\nCHAPTER 12 | How Things Go Wrong\nCHAPTER 13 | How We Can Do Statistics Better\n\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 12 (“Confidence intervals with bootstrapping”)\nChapter 13 (“Inference with mathematical models”)\nChapter 24 (“Inference for linear regression with a single predictor”)\nChapter 25 (“Inference for linear regression with multiple predictors”)\nChapter 26 (“Inference for logistic regression”)\nChapters 16 – 22 (“Statistical Inference” section)\n\n\n\n\n\n Download the slides",
+    "text": "To build up empirical intuition about data, comparisons, and the mechanics of regression modelling, in previous workshops we have focused on understanding the calculation and interpretation of regression coefficients. These ‘point estimates’ may appear as reliable and certain answers to concrete research (sub)questions, but in fact they are a well-intended guess mired in uncertainty. Can they really tell us something reliable about the phenomenon under study in our population of interest, beyond the sample of data that we used to calculate them? Here’s where it becomes essential to develop our understanding of statistical theory that we have so far avoided. Thinking carefully about probability, uncertainty and the challenges of drawing inferences beyond one’s available data will help better understand our – and other researchers’ – results and the claims that can be made on their back.",
     "crumbs": [
       "Materials",
       "Workshop 5",
-      "[W5] Info and Slides"
+      "[W5] Description and Readings"
     ]
   },
   {
@@ -490,10 +490,11 @@
     "href": "Materials/Info/introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "Welcome to the module! This introductory lecture provides an overview of the quantitative methods component.\n\n\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data (Access through Canvas - Newcastle University login required)\n\nIntroduction\nCHAPTER 12 | How Things Go Wrong\nCHAPTER 13 | How We Can Do Statistics Better\n\n\n\n\n\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 1: Effective Strategies for Studying Statistics\nChapter 2: Overcoming Math Anxiety\nChapter 3: Basic Math Concepts\n\n\nOn trust:\n\nLyon, Fergus, Guido Möllering, and M. N. K. Saunders, eds. 2012. Handbook of Research Methods on Trust. Northampton, Mass: Edward Elgar Pub.\n\nChapter 1: Introduction: the variety of methods for the multi-faceted phenomenon of trust (Fergus Lyon, Guido Möllering and Mark Saunders)\nChapter 5: Researching trust in different cultures (Friederike Welter and Nadezhda Alex)\nChapter 7: Measuring generalized trust: in defense of the ‘standard’ question (Eric Uslaner)\n\n\n\n\n\n\n Download the slides",
+    "text": "Welcome to the module! This introductory lecture provides an overview of the quantitative methods component.",
     "crumbs": [
       "Materials",
-      "Introduction"
+      "Introduction",
+      "Description and Readings"
     ]
   },
   {
@@ -511,142 +512,144 @@
     "objectID": "Materials/Info/info_w5.html#essential-readings",
     "href": "Materials/Info/info_w5.html#essential-readings",
     "title": "Uncertainty and Inference",
-    "section": "",
-    "text": "(Access links through Canvas - Newcastle University login required)\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement\nCHAPTER 7 | How Sure Can We Be About What Is Going On? Estimates and Intervals\nCHAPTER 9 | Putting Probability and Statistics Together\nCHAPTER 10 | Answering Questions and Claiming Discoveries",
+    "section": "Essential readings",
+    "text": "Essential readings\n(Access links through Canvas - Newcastle University login required)\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement\nCHAPTER 7 | How Sure Can We Be About What Is Going On? Estimates and Intervals\nCHAPTER 9 | Putting Probability and Statistics Together\nCHAPTER 10 | Answering Questions and Claiming Discoveries",
     "crumbs": [
       "Materials",
       "Workshop 5",
-      "[W5] Info and Slides"
+      "[W5] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w5.html#further-readings",
     "href": "Materials/Info/info_w5.html#further-readings",
     "title": "Uncertainty and Inference",
-    "section": "",
-    "text": "Spiegelhalter (2020) The Art of Statistics: Learning from Data: (Access through Canvas - Newcastle University login required)\n\nCHAPTER 11 | Learning from Experience the Bayesian Way\nCHAPTER 12 | How Things Go Wrong\nCHAPTER 13 | How We Can Do Statistics Better\n\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 12 (“Confidence intervals with bootstrapping”)\nChapter 13 (“Inference with mathematical models”)\nChapter 24 (“Inference for linear regression with a single predictor”)\nChapter 25 (“Inference for linear regression with multiple predictors”)\nChapter 26 (“Inference for logistic regression”)\nChapters 16 – 22 (“Statistical Inference” section)",
+    "section": "Further readings",
+    "text": "Further readings\nSpiegelhalter (2020) The Art of Statistics: Learning from Data: (Access through Canvas - Newcastle University login required)\n\nCHAPTER 11 | Learning from Experience the Bayesian Way\nCHAPTER 12 | How Things Go Wrong\nCHAPTER 13 | How We Can Do Statistics Better\n\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 12 (“Confidence intervals with bootstrapping”)\nChapter 13 (“Inference with mathematical models”)\nChapter 24 (“Inference for linear regression with a single predictor”)\nChapter 25 (“Inference for linear regression with multiple predictors”)\nChapter 26 (“Inference for logistic regression”)\nChapters 16 – 22 (“Statistical Inference” section)",
     "crumbs": [
       "Materials",
       "Workshop 5",
-      "[W5] Info and Slides"
+      "[W5] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w3.html#essential-readings",
     "href": "Materials/Info/info_w3.html#essential-readings",
     "title": "Modelling continuous outcomes",
-    "section": "",
-    "text": "(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 5 | Modelling Relationships Using Regression\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nREGRESSION (pp. 75-88)\n\n\nApplication:\n\nChapter 4 (“Community life and social relations”, pp. 49-62) in Wilkinson and Pickett (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press.\nDelhey, Jan, and Kenneth Newton. 2005. “Predicting Cross-National Levels of Social Trust: Global Pattern or Nordic Exceptionalism?” European Sociological Review 21(4): 311–27.\nÖsterman, Marcus. 2021.“Can We Trust Education for Fostering Trust? Quasi-Experimental Evidence on the Effect of Education and Tracking on Social Trust.” Social Indicators Research 154(1): 211–33.\n\nPlus, the Electronic supplementary material: https://link.springer.com/article/10.1007/s11205-020-02529-y#Sec15",
+    "section": "Essential readings",
+    "text": "Essential readings\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 5 | Modelling Relationships Using Regression\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nREGRESSION (pp. 75-88)\n\n\nApplication:\n\nChapter 4 (“Community life and social relations”, pp. 49-62) in Wilkinson and Pickett (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press.\nDelhey, Jan, and Kenneth Newton. 2005. “Predicting Cross-National Levels of Social Trust: Global Pattern or Nordic Exceptionalism?” European Sociological Review 21(4): 311–27.\nÖsterman, Marcus. 2021.“Can We Trust Education for Fostering Trust? Quasi-Experimental Evidence on the Effect of Education and Tracking on Social Trust.” Social Indicators Research 154(1): 211–33.\n\nPlus, the Electronic supplementary material: https://link.springer.com/article/10.1007/s11205-020-02529-y#Sec15",
     "crumbs": [
       "Materials",
       "Workshop 3",
-      "[W3] Info and Slides"
+      "[W3] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w3.html#further-readings",
     "href": "Materials/Info/info_w3.html#further-readings",
     "title": "Modelling continuous outcomes",
-    "section": "",
-    "text": "Statistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 11 (“Correlation Coefficients”)\nChapter 12 (“Linear regression”)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 7 (“Linear regression with a single predictor”)\nChapter 8 (“Linear regression with multiple predictors”)\n\n\nAdvanced topics:\n\nClark, William Roberts, and Matt Golder. 2023. Interaction Models: Specification and Interpretation. Cambridge: Cambridge University Press.",
+    "section": "Further readings",
+    "text": "Further readings\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 11 (“Correlation Coefficients”)\nChapter 12 (“Linear regression”)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 7 (“Linear regression with a single predictor”)\nChapter 8 (“Linear regression with multiple predictors”)\n\n\nAdvanced topics:\n\nClark, William Roberts, and Matt Golder. 2023. Interaction Models: Specification and Interpretation. Cambridge: Cambridge University Press.",
     "crumbs": [
       "Materials",
       "Workshop 3",
-      "[W3] Info and Slides"
+      "[W3] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w1.html#essential-readings",
     "href": "Materials/Info/info_w1.html#essential-readings",
     "title": "Measurement and Description",
-    "section": "",
-    "text": "(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 1 | Getting Things in Proportion: Categorical Data and Percentages\nCHAPTER 2 | Summarizing and Communicating Numbers. Lots of Numbers (read until the section on Describing Relationships Between Variables)\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement (recommended now, essential by Workshop 5)\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nUSING THE JASP ENVIRONMENT (pp. 2-7)\nDATA HANDLING IN JASP (pp. 8-10)\nJASP ANALYSIS MENU (pp. 12-15)\nDESCRIPTIVE STATISTICS (pp. 15-21)\nBASIC PLOTS (pp. 21-24)\n\n\nApplication:\n\nBekkers, René, and Bart Sandberg. 2019. “Grading Generalized Trust Across Europe”, Pp. 97-119 in: André, S., Kraaykamp, G., Meuleman, R. & Wittenberg, M. (Eds). Samenhang in Europa: eenheid in verscheidenheid. Proceedings zesde Nederlandse Workshop European Social Survey, The Hague, 16 March 2018.",
+    "section": "Essential readings",
+    "text": "Essential readings\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 1 | Getting Things in Proportion: Categorical Data and Percentages\nCHAPTER 2 | Summarizing and Communicating Numbers. Lots of Numbers (read until the section on Describing Relationships Between Variables)\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement (recommended now, essential by Workshop 5)\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nUSING THE JASP ENVIRONMENT (pp. 2-7)\nDATA HANDLING IN JASP (pp. 8-10)\nJASP ANALYSIS MENU (pp. 12-15)\nDESCRIPTIVE STATISTICS (pp. 15-21)\nBASIC PLOTS (pp. 21-24)\n\n\nApplication:\n\nBekkers, René, and Bart Sandberg. 2019. “Grading Generalized Trust Across Europe”, Pp. 97-119 in: André, S., Kraaykamp, G., Meuleman, R. & Wittenberg, M. (Eds). Samenhang in Europa: eenheid in verscheidenheid. Proceedings zesde Nederlandse Workshop European Social Survey, The Hague, 16 March 2018.",
     "crumbs": [
       "Materials",
       "Workshop 1",
-      "[W1] Info and Slides"
+      "[W1] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w1.html#further-readings",
     "href": "Materials/Info/info_w1.html#further-readings",
     "title": "Measurement and Description",
-    "section": "",
-    "text": "On trust:\n\nDelhey, Jan, Kenneth Newton, and Christian Welzel. 2011. “How General Is Trust in ‘Most People’? Solving the Radius of Trust Problem.” American Sociological Review 76(5): 786–807.\nRobbins, Blaine G. 2022. “Measuring Generalized Trust: Two New Approaches.” Sociological Methods & Research 51(1): 305–56.\nRobbins, Blaine G. 2024. “An Empirical Comparison of Four Generalized Trust Scales: Test–Retest Reliability, Measurement Invariance, Predictive Validity, and Replicability.” Sociological Methods & Research 53(2): 760–803.\nUslaner, E. M. 2012. Chapter 7 (“Measuring generalized trust: in defense of the ‘standard’ question”, pp. 72-82) in Lyon, Fergus, Guido Möllering, and M. N. K. Saunders, eds. 2012. Handbook of Research Methods on Trust. Northampton, Mass: Edward Elgar Pub.\n\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nSection II: Describing Univariate Data (pp. 42-83)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 1 (“Data”)\nChapter 2 (“Study design”)\n\nStevens, S. S. 1946. “On the Theory of Scales of Measurement.” Science 103(2684): 677–80.\nDuncan, Otis Dudley. 1984. Notes on Social Measurement: Historical and Critical. New York: Russell Sage Foundation. (especially Chapter 4 discussing and criticising Stevens (1946))",
+    "section": "Further readings",
+    "text": "Further readings\nOn trust:\n\nDelhey, Jan, Kenneth Newton, and Christian Welzel. 2011. “How General Is Trust in ‘Most People’? Solving the Radius of Trust Problem.” American Sociological Review 76(5): 786–807.\nRobbins, Blaine G. 2022. “Measuring Generalized Trust: Two New Approaches.” Sociological Methods & Research 51(1): 305–56.\nRobbins, Blaine G. 2024. “An Empirical Comparison of Four Generalized Trust Scales: Test–Retest Reliability, Measurement Invariance, Predictive Validity, and Replicability.” Sociological Methods & Research 53(2): 760–803.\nUslaner, E. M. 2012. Chapter 7 (“Measuring generalized trust: in defense of the ‘standard’ question”, pp. 72-82) in Lyon, Fergus, Guido Möllering, and M. N. K. Saunders, eds. 2012. Handbook of Research Methods on Trust. Northampton, Mass: Edward Elgar Pub.\n\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nSection II: Describing Univariate Data (pp. 42-83)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 1 (“Data”)\nChapter 2 (“Study design”)\n\nStevens, S. S. 1946. “On the Theory of Scales of Measurement.” Science 103(2684): 677–80.\nDuncan, Otis Dudley. 1984. Notes on Social Measurement: Historical and Critical. New York: Russell Sage Foundation. (especially Chapter 4 discussing and criticising Stevens (1946))",
     "crumbs": [
       "Materials",
       "Workshop 1",
-      "[W1] Info and Slides"
+      "[W1] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w2.html#essential-readings",
     "href": "Materials/Info/info_w2.html#essential-readings",
     "title": "Comparisons and Associations",
-    "section": "",
-    "text": "(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 2 | Summarizing and Communicating Numbers. Lots of Numbers (continue reading from the section on Describing Relationships Between Variables)\nCHAPTER 4 | What Causes What?\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement (recommended now, essential by Workshop 5)\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nDESCRIPTIVE DATA VISUALISATION (pp. 21-30)\nEXPLORING DATA INTEGRITY (pp. 30-37)\nDATA TRANSFORMATION (pp. 38-41)\nCOMPARING TWO INDEPENDENT GROUPS (pp. 56-63)\nCOMPARING TWO RELATED GROUPS (pp. 63-69)\nCORRELATION ANALYSIS (pp. 69-75)\nCHI-SQUARE TEST FOR ASSOCIATION (pp. 145-152)\n\n\nApplication:\n\nChapter 4 (“Community life and social relations”, pp. 49-62) in Wilkinson and Pickett (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press.\nDelhey, Jan, and Kenneth Newton. 2005. “Predicting Cross-National Levels of Social Trust: Global Pattern or Nordic Exceptionalism?” European Sociological Review 21(4): 311–27.",
+    "section": "Essential readings",
+    "text": "Essential readings\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 2 | Summarizing and Communicating Numbers. Lots of Numbers (continue reading from the section on Describing Relationships Between Variables)\nCHAPTER 4 | What Causes What?\nCHAPTER 3 | Why Are We Looking at Data Anyway? Populations and Measurement (recommended now, essential by Workshop 5)\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nDESCRIPTIVE DATA VISUALISATION (pp. 21-30)\nEXPLORING DATA INTEGRITY (pp. 30-37)\nDATA TRANSFORMATION (pp. 38-41)\nCOMPARING TWO INDEPENDENT GROUPS (pp. 56-63)\nCOMPARING TWO RELATED GROUPS (pp. 63-69)\nCORRELATION ANALYSIS (pp. 69-75)\nCHI-SQUARE TEST FOR ASSOCIATION (pp. 145-152)\n\n\nApplication:\n\nChapter 4 (“Community life and social relations”, pp. 49-62) in Wilkinson and Pickett (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press.\nDelhey, Jan, and Kenneth Newton. 2005. “Predicting Cross-National Levels of Social Trust: Global Pattern or Nordic Exceptionalism?” European Sociological Review 21(4): 311–27.",
     "crumbs": [
       "Materials",
       "Workshop 2",
-      "[W2] Info and Slides"
+      "[W2] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w2.html#further-readings",
     "href": "Materials/Info/info_w2.html#further-readings",
     "title": "Comparisons and Associations",
-    "section": "",
-    "text": "Statistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 9 (“The t Test”)\nChapter 10 (“Analysis of Variance”)\nChapter 11 (“Correlation Coefficients”)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 4 (“Exploring categorical data”)\nChapter 5 (“Exploring numerical data”)\n\n\nSubstantive:\n\nDinesen, Peter Thisted, and René Bekkers. 2017. “The Foundations of Individuals’ Generalized Social Trust: A Review.” Pp. 77–100 in Trust in Social Dilemmas, edited by P. A. M. van Lange, B. Rockenbach, and T. Yamagishi. New York, NY: Oxford University Press.",
+    "section": "Further readings",
+    "text": "Further readings\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 9 (“The t Test”)\nChapter 10 (“Analysis of Variance”)\nChapter 11 (“Correlation Coefficients”)\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 4 (“Exploring categorical data”)\nChapter 5 (“Exploring numerical data”)\n\n\nSubstantive:\n\nDinesen, Peter Thisted, and René Bekkers. 2017. “The Foundations of Individuals’ Generalized Social Trust: A Review.” Pp. 77–100 in Trust in Social Dilemmas, edited by P. A. M. van Lange, B. Rockenbach, and T. Yamagishi. New York, NY: Oxford University Press.",
     "crumbs": [
       "Materials",
       "Workshop 2",
-      "[W2] Info and Slides"
+      "[W2] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w4.html#essential-readings",
     "href": "Materials/Info/info_w4.html#essential-readings",
     "title": "Modelling dichotomous outcomes",
-    "section": "",
-    "text": "(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 5 | Modelling Relationships Using Regression (reading from section Different Types of Response Variable)\nCHAPTER 6 | Algorithms, Analytics and Prediction\nCHAPTER 8 | Probability – the Language of Uncertainty and Variability\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nLOGISTIC REGRESSION (pp. 88-92)\n\n\nApplication:\n\nDelhey, Jan, and Kenneth Newton (2003) “Who Trusts?: The Origins of Social Trust in Seven Societies.” European Societies 5(2): 93–137.",
+    "section": "Essential readings",
+    "text": "Essential readings\n(Access links through Canvas - Newcastle University login required)\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data:\n\nCHAPTER 5 | Modelling Relationships Using Regression (reading from section Different Types of Response Variable)\nCHAPTER 6 | Algorithms, Analytics and Prediction\nCHAPTER 8 | Probability – the Language of Uncertainty and Variability\n\nGoss-Sampson (2025) Statistical Analysis in JASP:\n\nLOGISTIC REGRESSION (pp. 88-92)\n\n\nApplication:\n\nDelhey, Jan, and Kenneth Newton (2003) “Who Trusts?: The Origins of Social Trust in Seven Societies.” European Societies 5(2): 93–137.",
     "crumbs": [
       "Materials",
       "Workshop 4",
-      "[W4] Info and Slides"
+      "[W4] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/info_w4.html#further-readings",
     "href": "Materials/Info/info_w4.html#further-readings",
     "title": "Modelling dichotomous outcomes",
-    "section": "",
-    "text": "Statistics:\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 9 (“Logistic regression”)\n\nConnelly, Roxanne, Vernon Gayle, and Paul S. Lambert (2016) “Statistical Modelling of Key Variables in Social Survey Data Analysis”. Methodological Innovations9:205979911663800.\n\nAdvanced topics:\n\nMood, Carina (2010) “Logistic Regression: Why We Cannot Do What We Think We Can Do, and What We Can Do About It.” European Sociological Review 26(1): 67–82.\nBreen, Richard, Kristian Bernt Karlson, and Anders Holm (2018) “Interpreting and Understanding Logits, Probits, and Other Nonlinear Probability Models.” Annual Review of Sociology 44(1): 39–54.",
+    "section": "Further readings",
+    "text": "Further readings\nStatistics:\n\nÇetinkaya-Rundel & Hardin (2024) Introduction to Modern Statistics:\n\nChapter 9 (“Logistic regression”)\n\nConnelly, Roxanne, Vernon Gayle, and Paul S. Lambert (2016) “Statistical Modelling of Key Variables in Social Survey Data Analysis”. Methodological Innovations9:205979911663800.\n\nAdvanced topics:\n\nMood, Carina (2010) “Logistic Regression: Why We Cannot Do What We Think We Can Do, and What We Can Do About It.” European Sociological Review 26(1): 67–82.\nBreen, Richard, Kristian Bernt Karlson, and Anders Holm (2018) “Interpreting and Understanding Logits, Probits, and Other Nonlinear Probability Models.” Annual Review of Sociology 44(1): 39–54.",
     "crumbs": [
       "Materials",
       "Workshop 4",
-      "[W4] Info and Slides"
+      "[W4] Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/introduction.html#essential-readings",
     "href": "Materials/Info/introduction.html#essential-readings",
     "title": "Introduction",
-    "section": "",
-    "text": "Spiegelhalter (2020) The Art of Statistics: Learning from Data (Access through Canvas - Newcastle University login required)\n\nIntroduction\nCHAPTER 12 | How Things Go Wrong\nCHAPTER 13 | How We Can Do Statistics Better",
+    "section": "Essential readings",
+    "text": "Essential readings\n\nSpiegelhalter (2020) The Art of Statistics: Learning from Data (Access through Canvas - Newcastle University login required)\n\nIntroduction\nCHAPTER 12 | How Things Go Wrong\nCHAPTER 13 | How We Can Do Statistics Better",
     "crumbs": [
       "Materials",
-      "Introduction"
+      "Introduction",
+      "Description and Readings"
     ]
   },
   {
     "objectID": "Materials/Info/introduction.html#further-readings",
     "href": "Materials/Info/introduction.html#further-readings",
     "title": "Introduction",
-    "section": "",
-    "text": "Statistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 1: Effective Strategies for Studying Statistics\nChapter 2: Overcoming Math Anxiety\nChapter 3: Basic Math Concepts\n\n\nOn trust:\n\nLyon, Fergus, Guido Möllering, and M. N. K. Saunders, eds. 2012. Handbook of Research Methods on Trust. Northampton, Mass: Edward Elgar Pub.\n\nChapter 1: Introduction: the variety of methods for the multi-faceted phenomenon of trust (Fergus Lyon, Guido Möllering and Mark Saunders)\nChapter 5: Researching trust in different cultures (Friederike Welter and Nadezhda Alex)\nChapter 7: Measuring generalized trust: in defense of the ‘standard’ question (Eric Uslaner)",
+    "section": "Further readings",
+    "text": "Further readings\nStatistics:\n\nKranzler (2022) Statistics for the Terrified:\n\nChapter 1: Effective Strategies for Studying Statistics\nChapter 2: Overcoming Math Anxiety\nChapter 3: Basic Math Concepts\n\n\nOn trust:\n\nLyon, Fergus, Guido Möllering, and M. N. K. Saunders, eds. 2012. Handbook of Research Methods on Trust. Northampton, Mass: Edward Elgar Pub.\n\nChapter 1: Introduction: the variety of methods for the multi-faceted phenomenon of trust (Fergus Lyon, Guido Möllering and Mark Saunders)\nChapter 5: Researching trust in different cultures (Friederike Welter and Nadezhda Alex)\nChapter 7: Measuring generalized trust: in defense of the ‘standard’ question (Eric Uslaner)",
     "crumbs": [
       "Materials",
-      "Introduction"
+      "Introduction",
+      "Description and Readings"
     ]
   },
   {
@@ -765,5 +768,130 @@
     "title": "Introduction",
     "section": "",
     "text": "Solution\n\n\n\nUsing the WVS7 dataset for the United Kingdom, and having identified the “social trust” variable from the Questionnaire and/or Codebook to be named “Q57” in the dataset, we obtain the following descriptive statistics:\n\n\n\n\n\n\nThere appear to be 3 levels in the variables. Form the questionnaire we know that there should be 2 valid categories only: 1 (Most people can be trusted) and 2 (Need to be very careful);\nFrom the Codebook we know that there may be some other values coded by the researchers as well: -1 for “Don´t know”, -2 for “No answer”, -4 for “Not asked” and -5 for “Missing”. These are coded with negative values in order to stand out as non-standard categories of answers. They code various reasons for why values may be “missing” in the dataset. In the UK dataset we are using here we have three of these values present;\nBy looking at the distribution plot, we see that the tallest bar (the largest answer category) is the one coded as 2. The largest (most common) category of a categorical variables is called the “mode”. We can also request for the “mode” the “median” and other potentially informative summary statistics to also be included in the Descriptive Statistics table by ticking the appropriate boxes under the Statistics option-bar in the Descriptive Statistics builder on the left hand side:\n\n\n\nAccording to the Descriptive Statistics table the mean of the variable is 1.488. However, in this case this is not a sensible statistic. First of all, we have a categorical variable, so an average value between 1 (Most people can be trusted) and 2 (Need to be very careful) does not mean much. If anything, in the case of only two categories, we know that if category 1 and category 2 are of equal size (i.e. the same number of people have answered each of them), then the mean would be \\({1 + 2 \\over 2} = 1.5\\), so a mean of 1.48 would indicate that the category coded as 1 is slightly larger. However, secondly, in our case we also have the several negative values that are also added up in the calculation of the mean. Under these circumstances, the mean cannot tell us anything accurate or useful.\nTo get a more precise percentage of the distribution of the answer options (categories) across the variable, we would need to request a Frequency table in the Descriptive Statistics builder, which we can do under the Tables option-bar:\n\nThe result would be:\n\nWe therefore find that almost 46% of the respondents in the dataset had answered that “Most people can be trusted”. However, this also counts with all the “missing” responses. If we would like to get a more accurate values for the “Valid Percent” (i.e. the percentage distribution among only those with valid response options, 1 or 2), then we will need to tell JASP to consider the negative values as “missing”.\n\n\n\nIf you see more than two levels/categories in your variable (and you are sure that you have chosen the correct variable), it means that in your dataset the variable contains some custom missing values. Missing values should be distinguished with a negative sign (e.g. -2). To set them as custom missing values, we can edit the dataset manually.\n\nClick on the Edit Data menu tab and scroll horizontally to your variable. Double-click on the variable column. In the middle tabs, check the label editor and identify any values that should be set as missing (e.g. -2). Click on the Missing values tab &gt; Use custom values and in the narrow field to the right type in the value you want to set as missing and click the + sign. You should be seeing something like below:\n\n\n\n\n\n\nYou can check back in the Label editor that the redundant value is no longer there.\n\nIn the same data editor window we can also make other changes to our variables. For example, let’s change the non-informative variable Name to something that better reflects the meaning of the variable, for example “soc-trust”, and let’s also give it a more descriptive Long name and even a Description if we want to. The Long name could be something like “Social trust”, and for the Description we could copy the original survey question out from the questionnaire: “Q57. Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?”.\n\nIn the Label editor we should also attach labels to the values so that we can better read the outputs produced. We can copy the labels from the questionnaire here too: “1 = Most people can be trusted” and “2 = Need to be very careful”.\nYour data editor window should look something like this:\n\n\n\n\n\n\nQuestion\nThe variable measurement level (Column type) appears as Ordinal. Is that correct? If you feel that the variable type should be changed, you can also do that here using the drop-down menu next to Column type.\n\nTo return to your data analysis, you can click on the Analyses menu tab. If you have changed the variable’s name, you can move it back to the Variables field to see the updated outputs.\n\nFind the other variables in the dataset that relate to social, interpersonal or institutional trust, and obtain similar descriptive statistics for them. Try to answer to yourself the same questions as above.\nAdd your notes to the Results output. By clicking on the small black down-arrowheads that appear next to the headings in the Results window when you hover over them with your mouse you can access small menu options that allow you to do various operations with the outputs (copy, save, edit, etc.), including the possibility to Add note. Your note will appear under the item to which it is added, and you can type in your note. The field acts as a basic text editor, which you can use to jot down your interpretation of the results and keep them close to the output. You can add in here your answers to some of the questions above.\n\nYour results and notes could look something like this (based on the WVS7 dataset for Andorra):\n\n\n\n\n\n\nSave your analysis. Click through Hamburger menu tab &gt; Save as &gt; Computer &gt; Browse and save the analysis in your “WVS7” folder with the name “wvs7-example.jasp” (or anything else that you find useful). Once it’s saved, you can close the analysis. You can now open the .jasp file you saved and continue or modify the analysis you have started.\nNow open a new JASP session and import the “ESS10” dataset you downloaded earlier, and perform a similar descriptive analysis on variables related to social, interpersonal and institutional trust you have done above. When complete, save that analysis to a .jasp file too."
+  },
+  {
+    "objectID": "Data/index.html#workshop-data",
+    "href": "Data/index.html#workshop-data",
+    "title": "Quantitative Datasets",
+    "section": "",
+    "text": "Questions of Trust\n\n\n\n\n\nThis is a collection of six small datasets compiled from original sources to exemplify several different ways in which the “social trust” / “generalised trust” question has been asked in social surveys. The datasets are helpful for thinking through questions about concept measurement similar to those asked by Bekkers and Sandberg (2019).\nThe focus of the datasets is on a single country: Great Britain / United Kingdom. The original datasets have been reduced to a small number of variables: (1) respondent ID number; (2) questionnaire subsample (if relevant and available); (3) age (both numeric and categorical (7 categories) where available); (4) sex; (5) and social trust. The order of the variables in the dataset, variable names and labels, and value/category codes and labels - including missing values - were left as in the original surveys (the only exception is the gb-cls23-trust_nm dataset, where the missing values have been excluded due to the large size of the original file - over 100,000 rows - which cannot be opened by JASP). The datasets can be downloaded in .sav (SPSS) format and loaded directly in JASP or R.\nThe available datasets and their original sources are:\n\nBritish Social Attitudes Survey 2024 (gb-bsa24-trust.sav)\nBritish Social Attitudes Survey 2023 (gb-bsa23-trust.sav)\nBritish Social Attitudes Survey 2010 (gb-bsa10-trust.sav)\nCommunity Life Survey 2023-24 (gb-cls23-trust_nm.sav)\nCitizenship Survey 2010-11 (gb-cs10-trust.sav)\nEuropean Social Survey, Round 11, 2023-24 (UK sample) (gb-ess11-trust.sav)\n\n\n Download\n\n\n\nBritish Social Attitudes Survey 2024\n\n\nBritish Social Attitudes Survey 2023\n\n\nBritish Social Attitudes Survey 2010\n\n\nCommunity Life Survey 2023-24\n\n\nCitizenship Survey 2010-11\n\n\nEuropean Social Survey 11, 2023-24\n\n\n\n\n\n\n\n\n\n\n\n Trust & Inequality   |   trust_inequality.dta\n\n\n\n\n\nThis dataset combines data on “generalised/social trust” from the latest waves of the World Values Survey and the European Values Study with macro(country)-level data on World Development Indicators (WDI) provided by the World Bank. The main variables of interest taken from the WDI refer to measurements of economic inequality within countries. The dataset allows us to conceptually replicate - using the latest available data - the analysis of the relationship between inequality and trust presented in Chapter 4 (“Community life and social relations”, pp. 49-62) of Wilkinson and Pickett (2010).\n Download\n\n\n\n\n\n\n\n\n\n Österman, Table 3   |   osterman_t3.dta\n\n\n\n\n\nThis dataset is the one used by Österman (2021) for the analysis underpinning the results reported in his Table 3 and related tables in the Online Supplementary Material. The aim of the article is to use information on educational reforms across European countries as a way to set up a quasi-experimental design testing the effect of education on social trust. With this approach, it aims to overcome the limitations of cross-sectional observational survey data from the European Social Survey by attempting a causal - rather than just correlational- explanation.\n Download\n\n\n\n\n\n\n\n\n\n Delhey & Newton, 2003   |   delhey&newton2003.sav\n\n\n\n\n\nThis dataset contains data from the EUROMODULE (1999-2002) surveys conducted in nine countries: Germany (DE) | Austria (AT) | Switzerland (CH) | Sweden (SE) | Spain (ES) | Slovenia (SI) | Korea, Republic of (KR) | Turkey (TR) | Hungary (HU). Out of the total of 366 variables measured, only those 100 were kept in this dataset that were used by Delhey and Newton (2003) in their analysis of the various correlates of “social trust”. The value of the EUROMODULE survey data compared to other comparative surveys that measure social trust is that it offers a much greater variety of explanatory variables that allow Delhey and Newton (2003) to test the relative explanatory power of several complex social theories explaining differences in levels of social trust both at the individual level and at the macro-social level.\n Download   Original questionnaire    Original Codebook    Data wrangling code (.R) \n\n\n\n\n\n\n\n\n\n Data transformation   |   data_transformation.jasp\n\n\n\n\n\nThis is a toy dataset derived from the European Social Survey, Round 10 (ESS10). Its aim is to be used to demonstrate several basic data transformation procedures in JASP. It contains 15 cases/observations/rows and 12 variables/features/columns (in addition to a Respondent ID variable). The cases were selected so as to include some missing values and reasonable variation across the selected variables.\nThe dataset should be used in conjunction with the ESS10 Questionnaire and Codebook.\nThis dataset is used in some of the data management example short videos available on this JASP tutorial YouTube playlist.\n Download"
+  },
+  {
+    "objectID": "Data/index.html#assignment-data",
+    "href": "Data/index.html#assignment-data",
+    "title": "Quantitative Datasets",
+    "section": "Assignment data",
+    "text": "Assignment data\nYou will use one of the datasets available below for your assignment task. These are real-life data from large-scale nationally representative surveys that include variables relating to the research questions posted on Canvas. To make the data more manageable (and because the module cannot cover some very important but more advanced topics such as clustering standard errors and multi-level modelling of cross-country data, or applying survey weights) the datasets are broken down by country and contain only a small selection of the variables available from the original surveys.\n\n\n\n\n\n\n World Values Survey, Wave 7   |   wvs7_XXX.sav\n\n\n\n\n\nThe World Values Survey (WVS) is an international research program devoted to the scientific and academic study of social, political, economic, religious and cultural values of people in the world. The project grew out of the European Values Study and was started in 1981. Since then it has been operating in more than 120 world societies. The main research instrument of the project is a representative comparative social survey which is conducted globally every 5 years. The datasets below come from Wave 7 (2017-2022) data, which comprised 66 countries/territories. The majority of surveys were completed in 2018-2020 with only about a dozen countries conducting their fieldwork since the Covid-19 pandemic outbreak in 2021-2022. The last included survey comes from India and was completed in July 2023.\nYou should cite the original data source in your assignments as:\n\nHaerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano J., M. Lagos, P. Norris, E. Ponarin & B. Puranen (eds.) (2022). World Values Survey: Round Seven. Datafile Version 5.0. Madrid, Spain & Vienna, Austria: JD Systems Institute & WVSA Secretariat. doi:10.14281/18241.24\n\n\n Download (single-country)\n\n\n\n\nAndorra\n\n\nArgentina\n\n\nArmenia\n\n\nAustralia\n\n\nBangladesh\n\n\nBolivia\n\n\nBrazil\n\n\nCanada\n\n\nChile\n\n\nChina\n\n\nColombia\n\n\nCyprus\n\n\nCzechia\n\n\nGermany\n\n\nEcuador\n\n\nEgypt\n\n\nEthiopia\n\n\n\nGreece\n\n\nGuatemala\n\n\nHong Kong SAR\n\n\nIndonesia\n\n\nIndia\n\n\nIran\n\n\nIraq\n\n\nJordan\n\n\nJapan\n\n\nKazakhstan\n\n\nKenya\n\n\nKyrgyzstan\n\n\nSouth Korea\n\n\nLebanon\n\n\nLibya\n\n\nMacau SAR\n\n\nMorocco\n\n\nMaldives\n\n\nMexico\n\n\nMyanmar\n\n\nMongolia\n\n\nMalaysia\n\n\nNigeria\n\n\nNicaragua\n\n\nNetherlands\n\n\nNew Zealand\n\n\nPakistan\n\n\nPeru\n\n\nPhilippines\n\n\nPuerto Rico\n\n\nRomania\n\n\nRussia\n\n\nSingapore\n\n\nSerbia\n\n\nSlovakia\n\n\nThailand\n\n\nTajikistan\n\n\nTunisia\n\n\nTurkey\n\n\nTaiwan ROC\n\n\nUkraine\n\n\nUruguay\n\n\nUnited States\n\n\nUzbekistan\n\n\nVenezuela\n\n\nVietnam\n\n\nZimbabwe\n\n\n\n Original questionnaire\n\n\n Original Codebook\n\n\n Data wrangling code (.R)\n\n\n\n\n\n\n\n\n\n\n European Values Study, 2017   |   evs2017_XXX.sav\n\n\n\n\n\nThe European Values Study (EVS) is a large-scale, cross-national and longitudinal survey research program on how Europeans think about family, work, religion, politics, and society. Repeated every nine years in an increasing number of countries, the survey provides insights into the ideas, beliefs, preferences, attitudes, values, and opinions of citizens all over Europe. The latest (fifth) wave of the survey, EVS 2017, was conducted in 37 participating countries.\nYou should cite the original data source in your assignments as:\n\nEVS (2022). European Values Study 2017: Integrated Dataset (EVS 2017). GESIS, Cologne. ZA7500 Data file Version 5.0.0, https://doi.org/10.4232/1.13897.\n\n\n Download (single-country)\n\n\n\n\nAlbania\n\n\nAzerbaijan\n\n\nAustria\n\n\nArmenia\n\n\nBosnia and Herzegovina\n\n\nBulgaria\n\n\nBelarus\n\n\nCroatia\n\n\nCzechia\n\n\nDenmark\n\n\nEstonia\n\n\nFinland\n\n\nFrance\n\n\nGeorgia\n\n\nGermany\n\n\nHungary\n\n\nIceland\n\n\nItaly\n\n\nLatvia\n\n\nLithuania\n\n\nMontenegro\n\n\nNetherlands\n\n\nNorway\n\n\nPoland\n\n\nPortugal\n\n\nRomania\n\n\nRussia\n\n\nSerbia\n\n\nSlovakia\n\n\nSlovenia\n\n\nSpain\n\n\nSweden\n\n\nSwitzerland\n\n\nUkraine\n\n\nNorth Macedonia\n\n\n\n\n Original questionnaire\n\n\n Original Codebook\n\n\n Data wrangling code (.R)\n\n\n\n\n\n\n\n\n\n\n European Social Survey, 10   |   ess10_XXX.sav\n\n\n\n\n\nThe European Social Survey (ESS) is an academically driven cross-national survey that has been conducted across Europe since 2001. Every two years, face-to-face interviews are conducted with newly selected, cross-sectional samples.The survey measures the attitudes, beliefs and behaviour patterns of diverse populations and has been administered in 40 countries to date. ESS data collection is based on an hour-long face-to-face interview. The tenth ESS round covers 31 countries.\nYou should cite the original data source in your assignments as:\n\nEuropean Social Survey European Research Infrastructure (ESS ERIC) (2023). ESS10 integrated file, edition 3.2 [Data set]. Sikt - Norwegian Agency for Shared Services in Education and Research. https://doi.org/10.21338/ess10e03_2\n\n\n Download (single-country)\n\n\n\n\nBelgium\n\n\nBulgaria\n\n\nSwitzerland\n\n\nCzechia\n\n\nEstonia\n\n\nFinland\n\n\nFrance\n\n\n\nGreece\n\n\nCroatia\n\n\nHungary\n\n\nIreland\n\n\nIceland\n\n\nItaly\n\n\nLithuania\n\n\nMontenegro\n\n\nNorth Macedonia\n\n\nNetherlands\n\n\nNorway\n\n\nPortugal\n\n\nSlovenia\n\n\nSlovakia\n\n\n\n Original questionnaire\n\n\n Original Codebook\n\n\n Data wrangling code (.R)\n\n\n\n\n\n\n\n\n\n\n Variable search\n\n\n\n\n\nUse the search table below to quickly check what variables are available in which survey dataset. In the Search field you can search for any keyword."
+  },
+  {
+    "objectID": "Data/index.html#references",
+    "href": "Data/index.html#references",
+    "title": "Quantitative Datasets",
+    "section": "References",
+    "text": "References\n\n\n\n\nBekkers R and Sandberg B (2019) Grading Generalized Trust Across Europe. In: André S, Kraaykamp G, Meuleman R, et al. (eds.) Samenhang in Europa: Eenheid in Verscheidenheid. Proceedings Zesde Nederlandse Workshop European Social Survey. The Hague, pp. 97–119. Available at: https://osf.io/c9mq4/ (accessed 19 February 2024).\n\n\nDelhey J and Newton K (2003) Who trusts?: The origins of social trust in seven societies. European Societies 5(2). Routledge: 93–137.\n\n\nÖsterman M (2021) Can we trust education for fostering trust? Quasi-experimental evidence on the effect of education and tracking on social trust. Social Indicators Research 154(1): 211–233.\n\n\nWilkinson RG and Pickett K (2010) The Spirit Level: Why Greater Equality Makes Societies Stronger. New York: Bloomsbury Press."
+  },
+  {
+    "objectID": "Materials/Notes/notes_w5.html",
+    "href": "Materials/Notes/notes_w5.html",
+    "title": "Uncertainty and Inference",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w5.html#lecture-slides",
+    "href": "Materials/Notes/notes_w5.html#lecture-slides",
+    "title": "Uncertainty and Inference",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w3.html",
+    "href": "Materials/Notes/notes_w3.html",
+    "title": "Modelling continuous outcomes",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w3.html#lecture-slides",
+    "href": "Materials/Notes/notes_w3.html#lecture-slides",
+    "title": "Modelling continuous outcomes",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w1.html",
+    "href": "Materials/Notes/notes_w1.html",
+    "title": "Measurement and Description",
+    "section": "",
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 1",
+      "[W1] Slides and Notes"
+    ]
+  },
+  {
+    "objectID": "Materials/Notes/notes_w1.html#lecture-slides",
+    "href": "Materials/Notes/notes_w1.html#lecture-slides",
+    "title": "Measurement and Description",
+    "section": "",
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 1",
+      "[W1] Slides and Notes"
+    ]
+  },
+  {
+    "objectID": "Materials/Notes/notes_intro.html",
+    "href": "Materials/Notes/notes_intro.html",
+    "title": "",
+    "section": "",
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Introduction",
+      "Slides and Notes"
+    ]
+  },
+  {
+    "objectID": "Materials/Notes/notes_intro.html#lecture-slides",
+    "href": "Materials/Notes/notes_intro.html#lecture-slides",
+    "title": "",
+    "section": "",
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Introduction",
+      "Slides and Notes"
+    ]
+  },
+  {
+    "objectID": "Materials/Notes/notes_w2.html",
+    "href": "Materials/Notes/notes_w2.html",
+    "title": "Comparisons and Associations",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w2.html#lecture-slides",
+    "href": "Materials/Notes/notes_w2.html#lecture-slides",
+    "title": "Comparisons and Associations",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w4.html",
+    "href": "Materials/Notes/notes_w4.html",
+    "title": "Modelling dichotomous outcomes",
+    "section": "",
+    "text": "Download the slides"
+  },
+  {
+    "objectID": "Materials/Notes/notes_w4.html#lecture-slides",
+    "href": "Materials/Notes/notes_w4.html#lecture-slides",
+    "title": "Modelling dichotomous outcomes",
+    "section": "",
+    "text": "Download the slides"
   }
 ]
