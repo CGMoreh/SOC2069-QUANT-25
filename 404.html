@@ -107,157 +107,76 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="content-block">
 <style>
-  .page-wrap {
-    text-align: center;
-  }
+  /* layout */
+  .page-wrap { text-align:center; max-width:900px; margin:0 auto; }
+  #trace { width:100%; height:200px; background:#fff; border:1px solid #fff; overflow:hidden; margin:0 auto 8px; }
+  #trace-svg { width:100%; height:100%; display:block; }
 
-  #trace {
-    width: 100%;
-    height: 200px;
-    border: 1px solid #ffffff;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    background: #ffffff;
-    margin: 0 auto 0 auto; /* reduced gap below trace */
-  }
+  /* console */
+  #console { width:600px; margin:0 auto; background:#ffffff7e; border:1px solid #fff; padding:8px; white-space:pre-line; box-sizing:border-box;
+             transition: opacity .42s ease, max-height .42s ease, padding .42s ease; max-height:160px; opacity:1; }
+  .console-hidden { opacity:0; max-height:0; padding-top:0; padding-bottom:0; margin-bottom:0; }
 
-  /* SVG fills the trace box */
-  #trace-svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
+  /* final message */
+  #final-message { display:none; text-align:center; margin-top:6px; transition:opacity .6s ease, transform .6s ease; opacity:0; transform:translateY(8px); }
+  #final-message.visible { display:block; opacity:1; transform:translateY(0); }
 
-  /* Console: allow smooth collapse & fade */
-  #console {
-    font-size: 0.9em;
-    text-align: center;
-    width: 600px;
-    height: 90px;
-    background: #ffffff7e;
-    border: 1px solid #ffffff;
-    padding: 5px;
-    overflow: hidden;
-    white-space: pre-line;
-    margin: 0 auto 0 auto; /* reduced gap above final message */
-    transition: opacity 420ms ease, max-height 420ms ease, padding 420ms ease, margin 420ms ease;
-    max-height: 160px;
-    box-sizing: border-box;
-    opacity: 1;
-  }
+  .final-404 { font-size:160px; font-weight:800; color:rgba(144,12,63,0.95); line-height:1; margin:-60px 0 18px; transform:scale(.96); opacity:0;
+               transition: transform .45s cubic-bezier(.2,.9,.2,1), opacity .25s ease; }
+  .final-404.visible-404 { transform:scale(1); opacity:1; }
 
-  /* state used to hide the console smoothly */
-  .console-hidden {
-    opacity: 0;
-    max-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
+  .final-content { opacity:0; transform:translateY(6px); transition:opacity .45s ease, transform .45s cubic-bezier(.2,.9,.2,1); }
+  #final-message.visible .final-content { opacity:1; transform:translateY(0); }
 
-  /* Final message initial state: hidden (display:none) — will be shown from JS */
-  #final-message {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px);
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 6px;
-    transition: opacity 2s cubic-bezier(.2,.9,.2,1), transform 2ms cubic-bezier(.2,.9,.2,1);
-  }
-
-  /* visible class triggers the smooth appearance */
-  #final-message.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .final-404 {
-    display: block;
-    font-size: 180px;
-    font-weight: 800;
-    color: rgba(144,12,63,0.95);
-    margin: 0 0 30px 0;
-    line-height: 1;
-    transform: scale(0.92);
-    opacity: 0;
-    transition: transform 1.5s cubic-bezier(.2,.9,.2,1), opacity 1.5s ease 2s;
-  }
-
-  /* when final-message is visible, animate the big 404 */
-  #final-message.visible .final-404 {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  .backbutton {
-    background-color: #900C3F;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-  .actions {
-    text-align: center;
-    margin-top: 12px;
-  }
-
+  .backbutton { background:#900C3F; color:#fff; border:none; padding:12px 26px; font-size:16px; border-radius:4px; cursor:pointer; }
 </style>
 
 <div class="page-wrap">
 <div id="trace">
-<p><svg id="trace-svg" viewbox="0 0 600 200" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg"></svg></p>
+<svg id="trace-svg" viewbox="0 0 600 200" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+</svg>
 </div>
 <div id="console">
-<p>Running MCMC…<br> Iteration 1/4000<br></p>
+Running MCMC…<br>Iteration 1/4000<br>
 </div>
 <div id="final-message" aria-hidden="true">
-<p class="final-404">
+<div class="final-404" aria-hidden="true">
 404
-</p>
+</div>
+<div class="final-content" aria-hidden="true">
 <p>
 <strong>Posterior probability of this page existing ≤ 0.0001</strong>
 </p>
 <p>
-Maybe update your priors and try again later.
+Maybe update your priors and try again later
 </p>
-<div class="actions">
+<div style="margin-top:8px;">
 <p><button class="backbutton" onclick="goBack()">Go Back</button></p>
 </div>
 </div>
 </div>
+</div>
 <script>
-(function(){
+(function () {
   const svg = document.getElementById('trace-svg');
-  let W = 600;
-  const H = 200;
-  const chains = 5;
-  const maxPoints = 120;
-  const colors = ['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00'];
+  const consoleBox = document.getElementById('console');
+  const finalMsg = document.getElementById('final-message');
+  const big404 = document.querySelector('.final-404');
+  const finalContent = document.querySelector('.final-content');
+
+  let W = 600, H = 200, maxPoints = 100, chains = 6;
+  const colors = ['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#22e4e8'];
+  const data = Array.from({length:chains}, () => Array(maxPoints).fill(H/2 + (Math.random()-0.5)*20));
+  const paths = [];
 
   function updateSize(){
-    const rect = svg.getBoundingClientRect();
-    W = Math.max(100, Math.round(rect.width));
+    const r = svg.getBoundingClientRect();
+    W = Math.max(120, Math.round(r.width));
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   }
   updateSize();
   window.addEventListener('resize', updateSize);
 
-  const data = new Array(chains).fill(null).map(() => {
-    const baseline = H/2 + (Math.random()-0.5)*90;
-    const arr = new Array(maxPoints).fill(baseline);
-    return arr;
-  });
-
-  const paths = [];
   for (let i=0;i<chains;i++){
     const p = document.createElementNS('http://www.w3.org/2000/svg','path');
     p.setAttribute('fill','none');
@@ -268,83 +187,75 @@ Maybe update your priors and try again later.
     paths.push(p);
   }
 
-  function randn() {
+  function randn(){
     let u=0,v=0;
     while(u===0) u=Math.random();
     while(v===0) v=Math.random();
-    return Math.sqrt(-2.0*Math.log(u)) * Math.cos(2.0*Math.PI*v);
+    return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);
   }
 
-  function stepChains() {
+  function stepChains(){
     for (let c=0;c<chains;c++){
       const arr = data[c];
       const prev = arr[arr.length-1];
-      const drift = (H/2 - prev) * 0.02;
-      const step = prev + drift + randn()*4.5;
-      arr.push(Math.max(4, Math.min(H-4, step)));
-      if (arr.length > maxPoints) arr.shift();
+      const drift = (H/2 - prev) * 0.05;
+      arr.push(Math.max(4, Math.min(H-4, prev + drift + randn()*5)));
+      if (arr.length>maxPoints) arr.shift();
     }
   }
 
-  function draw() {
-    const dx = W / (maxPoints-1);
+  function draw(){
+    const dx = W / (maxPoints - 1);
     for (let c=0;c<chains;c++){
       const arr = data[c];
       if (!arr.length) continue;
-      let d = 'M 0 ' + (H - arr[0]);
-      for (let i=1;i<arr.length;i++){
-        const x = (i)*dx;
-        const y = H - arr[i];
-        d += ' L '+x+' '+y;
-      }
+      let d = `M 0 ${H - arr[0]}`;
+      for (let i=1;i<arr.length;i++) d += ` L ${i*dx} ${H - arr[i]}`;
       paths[c].setAttribute('d', d);
     }
   }
 
   let animRunning = true;
-  function animate() {
-    if (!animRunning) return;
-    stepChains();
-    draw();
-    requestAnimationFrame(animate);
-  }
-  animate();
+  (function loop(){
+    if (animRunning){
+      stepChains();
+      draw();
+    }
+    requestAnimationFrame(loop);
+  })();
 
-  // iteration / console logic
+  // progress simulation
   let iteration = 1;
-  const consoleBox = document.getElementById("console");
-  const finalMsg = document.getElementById("final-message");
-
-  const interval = setInterval(() => {
-    iteration += Math.floor(Math.random() * 500);
+  const tick = setInterval(() => {
+    iteration += Math.floor(Math.random()*450) + 10;
     if (iteration >= 4000) {
-      clearInterval(interval);
+      clearInterval(tick);
       animRunning = false;
       draw();
-      // update console final text
-      consoleBox.textContent = `Running MCMC...\nIteration 4000/4000\nDone.`;
-      // smoothly hide console
+      consoleBox.textContent = 'Running MCMC...\nIteration 4000/4000\nDone.';
       consoleBox.classList.add('console-hidden');
-      // after collapse finishes, remove it from flow and reveal final message smoothly
       setTimeout(() => {
         consoleBox.style.display = 'none';
+        // reveal 404 immediately, then rest of content
         finalMsg.style.display = 'block';
-        // allow one frame then add visible class so transition runs
-        requestAnimationFrame(() => finalMsg.classList.add('visible'));
-      }, 480); // slightly larger than CSS transition to ensure clean switch
+        requestAnimationFrame(() => big404.classList.add('visible-404'));
+        setTimeout(() => {
+          finalMsg.classList.add('visible');
+          big404.setAttribute('aria-hidden','false');
+          finalContent.removeAttribute('aria-hidden');
+          finalMsg.removeAttribute('aria-hidden');
+        }, 700);
+      }, 420);
     } else {
       consoleBox.textContent = `Running MCMC...\nIteration ${iteration}/4000`;
-      for (let k=0;k<2;k++) stepChains();
+      // advance a couple of steps between ticks for smoother trace
+      stepChains(); stepChains();
     }
   }, 300);
-
 })();
 </script>
 <script>
-function goBack()
-  {
-  window.history.back()
-  }
+function goBack(){ window.history.back(); }
 </script>
 
 </div>
