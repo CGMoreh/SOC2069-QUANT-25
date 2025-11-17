@@ -1,0 +1,44 @@
+---
+# reference-location: margin
+---
+
+## Income inequality
+
+Data on income inequality in various countries comes from the [*OECD Income Distribution Database (IDD)*](https://www.oecd.org/en/data/datasets/income-and-wealth-distribution-database.html). The *IDD* offers data on levels and trends in income inequality and poverty, and is updated on a rolling basis. The latest update at the time of writing was in June 2025. You can download a summary table with key indicators such as *Gini coefficients*, *income share*, *quintile share ratios* and *poverty rates* for selected years from [{{< iconify vscode-icons file-type-excel2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx). An interactive charting tool of *income inequality* indicators is also available [{{< iconify flat-color-icons line-chart size=xs >}} here](https://www.oecd.org/en/data/indicators/income-inequality.html). Detailed definitions and technical descriptions of their operationalisation is provided [{{< iconify vscode-icons file-type-pdf2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-tor-2012-onwards.pdf). You can read a summary of the database and core inequality indicators in the drop-down box below.
+
+::: {.callout-note collapse="true"}
+## OECD data sources and definitions 
+
+### Equivalised household disposable income
+
+The *OECD Income Distribution database (IDD)* benchmarks and monitors countries&rsquo; performance in the field of income inequality and poverty. It contains a number of standardised indicators based on the central concept of &ldquo;equivalised household disposable income&rdquo;, i.e. the total income received by the households less the current taxes and transfers they pay, adjusted for household size with an equivalence scale. While household income is only one of the factors shaping people&rsquo;s economic well-being, it is also the one for which comparable data for all OECD countries are most common. Income distribution has a long-standing tradition among household-level statistics, with regular data collections going back to the 1980s (and sometimes earlier) in many OECD countries.
+
+Achieving comparability in this field is a challenge, as national practices differ widely in terms of concepts, measures, and statistical sources. In order to maximise international comparability as well as inter-temporal consistency of data, the IDD data collection and compilation process is based on a common set of statistical conventions (e.g. on income concepts and components). The information obtained by the OECD through a network of national data providers, via a standardized questionnaire, is based on national sources that are deemed to be most representative for each country. The original data sources for each country and year are listed [{{< iconify vscode-icons file-type-pdf2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-metadata-sources-and-income-years.pdf).
+
+### Quintile share ratio (disposable income)
+
+The *quintile share ratio* - **or** *S80/S20 ratio* - is the share of all income received by the **top _quintile_** (i.e. 20%) **divided by** the share of the **bottom _quintile_** (i.e. 20%). It is a relatively simple measure to calculate once we have accurate data on the income distribution in a country. For example, in the [{{< iconify vscode-icons file-type-excel2 size=xs >}} IDD key indicators summary table](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx) we find that in Australia in the latest available year earners in the bottom 20% of the income distribution held 7.2% of the total income distributed in that country, while those in the top 20% of the distribution received 40% of that total. If we divide the two ($frac{40}{7.2}$) we obtain `r round(40/7.2, 1)`, which is the value given for the *S80/S20 income share ratio* indicator for Australia in the latest available year.
+
+### Gini (disposable income)
+
+The *Gini coefficient* is a measure that compares *cumulative proportions of the population* against the *cumulative proportions of income they receive*, condensing the entire income distribution for a country into a single number between 0 and 1: the **higher the number**, the **greater the degree of income _inequality_**. Mathematically, there are a few different equations that economists commonly use for calculating it, with those based on the so-called *Lorenz curve* being the most popular. You can watch a very short video explanation of the *Gini coefficient* [{{< iconify logos youtube-icon size=xs >}} here](https://www.youtube.com/watch?v=OUN93JwBAY4) and there is a nice and simple online Gini Coefficient Calculator available [here](https://goodcalculators.com/gini-coefficient-calculator/). For example, look at the two sets of numbers below, which we can imagine to represent the incomes of ten individuals each making up the population of a different country (and assume some standardised hypothetical currency unit that equalises purchasing power differences in the two countries)^[Many internationally comparative economic indicators rely on such standardised units as Purchasing Power Parity (PPP) rates, international dollars, Purchasing Power Standards (PPS) or the 'Big Mac Index']:
+
+- **_Country A_**: `8000 10000 9000 10000 10000 8000 7000 8000 390000 540000`
+- **_Country B_**: `80000 100000 90000 120000 140000 70000 70000 90000 120000 120000`
+
+Eyeballing the numbers, which "country" do you think is the more *equal* one, and which is the more *unequal* one? Which one will have the higher *Gini coefficient*? You can copy/paste each set of numbers into the online calculator to get the precise coefficient. But the true reason why we may care about these artificial metrics is that it allows us to ask some further questions, such as: which *individual* would you most like to be from among the twenty income holders listed?; which *country* would you rather like to live in?; if you were to be randomly assigned at birth to a country in a world consisting of several countries such as these two, would you be more comfortable if that world consisted predominantly of countries of type "A" or "B"? Philosophers have been asking these questions - [sometimes very explicitly](https://plato.stanford.edu/entries/rawls/) - for a long time, economists have been working on designing more detailed and accurate measurements and modelling techniques, and sociologists are always interested in understanding how these questions shape the actual lives of people.
+
+::: 
+
+We can view and download any relevant data through the OECD website's **Data Explorer**, and we selected two measures of income inequality - the *Gini index* and the *S80/S20 ratio* - for all years between 2000-2023 as measured based on various definitions: 
+
+:::{.column-page}
+```{=html}
+<iframe src="https://data-viewer.oecd.org?chartId=ae3eb26a-de3c-4973-a84b-b2e4562753b1" width="100%" height="600px" frameborder="0" data-external="1"></iframe>
+```
+:::
+
+This is the dataset, downloaded to a `.csv` file named `oecd-inequality.csv`, which we will use to obtain the income inequality macro data needed to replicate the analysis presented in @WilkinsonPickett2010SpiritLevelWhy and @PickettEtAl2024SpiritLevel15 (see also @Pickett2024SpiritLevel15TechAppendix).
+
+
+

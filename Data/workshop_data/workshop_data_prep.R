@@ -132,7 +132,7 @@ sjlabelled::write_spss(wvs7_uk, "D:/OneDrive - Newcastle University/GitHub_priv/
 
 
 
-#  Osterman 2021 #####################################################################
+#  Osterman 2021, Table 3 #####################################################################
 
 raw_osterman <- data_read("Data/raw/Replication_data_ESS1-9_20201113.dta")
 
