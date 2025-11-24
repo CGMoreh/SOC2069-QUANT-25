@@ -268,7 +268,7 @@
     "href": "Materials/index.html",
     "title": "",
     "section": "",
-    "text": "Workshop\nTopic\nInfo + readings\nSlides + notes\nWorksheets\n\n\n\n\n\nSoftware\n\n\n\n\n\n\nIntroduction: Statistics, data and models\n\n\n\n\n\nWorkshop 1\nMeasurement and Description\n\n\n\n\n\nWorkshop 2\nComparisons and Associations\n\n  \n\n\n\nWorkshop 3\nModelling continuous outcomes\n\n  \n  \n\n\nWorkshop 4\nModelling binary outcomes\n\n  \n  \n\n\nWorkshop 5\nUncertainty and Inference",
+    "text": "Workshop\nTopic\nInfo + readings\nSlides + notes\nWorksheets\n\n\n\n\n\nSoftware\n\n\n\n\n\n\nIntroduction: Statistics, data and models\n\n\n\n\n\nWorkshop 1\nMeasurement and Description\n\n\n\n\n\nWorkshop 2\nComparisons and Associations\n\n\n\n\n\nWorkshop 3\nModelling continuous outcomes\n\n\n\n\n\nWorkshop 4\nModelling binary outcomes\n\n\n  \n\n\nWorkshop 5\nUncertainty and Inference",
     "crumbs": [
       "Materials",
       "Outline and materials"
@@ -795,28 +795,48 @@
     "href": "Materials/Notes/notes_w5.html",
     "title": "Uncertainty and Inference",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 5",
+      "[W5] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w5.html#lecture-slides",
     "href": "Materials/Notes/notes_w5.html#lecture-slides",
     "title": "Uncertainty and Inference",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 5",
+      "[W5] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w3.html",
     "href": "Materials/Notes/notes_w3.html",
     "title": "Modelling continuous outcomes",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 3",
+      "[W3] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w3.html#lecture-slides",
     "href": "Materials/Notes/notes_w3.html#lecture-slides",
     "title": "Modelling continuous outcomes",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 3",
+      "[W3] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w1.html",
@@ -871,28 +891,48 @@
     "href": "Materials/Notes/notes_w2.html",
     "title": "Comparisons and Associations",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 2",
+      "[W2] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w2.html#lecture-slides",
     "href": "Materials/Notes/notes_w2.html#lecture-slides",
     "title": "Comparisons and Associations",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 2",
+      "[W2] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w4.html",
     "href": "Materials/Notes/notes_w4.html",
     "title": "Modelling dichotomous outcomes",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 4",
+      "[W4] Slides and Notes"
+    ]
   },
   {
     "objectID": "Materials/Notes/notes_w4.html#lecture-slides",
     "href": "Materials/Notes/notes_w4.html#lecture-slides",
     "title": "Modelling dichotomous outcomes",
     "section": "",
-    "text": "Download the slides"
+    "text": "Download the slides",
+    "crumbs": [
+      "Materials",
+      "Workshop 4",
+      "[W4] Slides and Notes"
+    ]
   },
   {
     "objectID": "Data/index copy.html",
