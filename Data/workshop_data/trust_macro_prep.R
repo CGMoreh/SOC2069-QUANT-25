@@ -559,6 +559,5 @@ setdiff(delhey_newton_2005_countries, delhey_newton_2005$country) # Ghana
 setdiff(delhey_newton_2005$country, delhey_newton_2005_countries) # "El Salvador", "Malta"
   
   
-data_write(delhey_newton_2005, "Data/workshop_data/w3/delhey_newton_2005.sav")
-data_write(delhey_newton_2005, "Data/workshop_data/w3/delhey_newton_2005.rds")
-
+data_write(delhey_newton_2005, "Data/workshop_data/w3/delhey&newton2005.sav")
+data_write(delhey_newton_2005, "Data/workshop_data/w3/delhey&newton2005.rds")

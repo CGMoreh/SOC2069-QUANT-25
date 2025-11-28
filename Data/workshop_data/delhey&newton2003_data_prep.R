@@ -23,11 +23,14 @@
 
 ## Install and load packages ##################################################################
 
-if (!require("pacman")) install.packages("pacman")
+library(tidyverse)
+library(easystats)
+library(sjlabelled)
+# library(sjmisc)
+library(archive)
+library(fs)
+# library(DT)
 
-pacman::p_load(
-  tidyverse, easystats, sjlabelled, sjmisc, archive, fs, DT
-)
 
 ## Data management
 
@@ -37,7 +40,7 @@ pacman::p_load(
 ## Name of the downloaded SPSS dataset
 datafile <- "ZA4063.sav"
 
-## Find the path to the raw file anywhere on a Windows system
+## Find the path to the raw file anywhere on a Windows system and create a path string
 datafile_path <- fs::dir_ls(path = "\\",                          
                             glob = paste0("*", datafile), 
                             recurse = TRUE, 
@@ -46,6 +49,8 @@ datafile_path <- fs::dir_ls(path = "\\",
 ## Import the SPSS file to R
 euromodule <- data_read(datafile_path)
 
+euromodule <- sjlabelled::read_spss(datafile_path)
+
 ## Checks
 dim(euromodule)  ## [1] 14730   366
 
@@ -53,8 +58,10 @@ dim(euromodule)  ## [1] 14730   366
 ## Select variables
 euromodule_small <- euromodule |> 
   select(
+    # ID and dependent variables
+      COUNTRY, YEAR, V16,
     # A: Demographic characteristics (control variables)
-      COUNTRY, YEAR, V7, V8, V33, 
+      V7, V8, V33, 
     # B: Personality theory
       V55A, V55D, V55E,  
     # C: Success and well-being theory
@@ -67,12 +74,44 @@ euromodule_small <- euromodule |>
       V11_A:V11_TR, V50, V49, V51A:V51D,
     # G: Societal conditions theory
       V17A:V17J, V52, V61, V58A:V58M
-    )
+    ) 
+
+euromodule_small_export <-
+euromodule_small |> 
+  label_to_colnames() |> 
+  janitor::clean_names()
+  # to_character()
+  # mutate(COUNTRY = to_character(COUNTRY))
+  # labels_to_levels()
+  # unlabel()
+
+
+
+
+datawizard::data_tabulate(euromodule_small$COUNTRY)
+datawizard::data_tabulate(t)
+
+sjmisc::frq(euromodule_small$V28)
+sjmisc::frq(euromodule_small_export$V28)
+
+
+glm(V16 ~ V8 + V33 + V55E + V55A + V55D + V23 + V56 + V14 + 
+  V15 + V22 + V13 + V12H + V12A + V12G + V49 + V50 + V17A + 
+  V17C + V58A + V7 + V11_SLO,
+data = euromodule_small_export, 
+family =  binomial()
+) |> 
+  model_parameters()
+
+
+
+
 
 ## Save the dataset
 
-euromodule_small |> 
-  data_write("Data/workshop_data/delhey&newton2003.sav")
+euromodule_small_export |> 
+  data_write("Data/workshop_data/w4/euromodule_small.sav")
+  # sjlabelled::write_spss("Data/workshop_data/w4/euromodule_small.sav")
 
 
 

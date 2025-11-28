@@ -1,12 +1,50 @@
 ---
-# reference-location: margin
+page-layout: full
+toc: false
+css: ../../../Materials/labcss.css
+reference-location: margin
+# suppress-bibliography: true
+# citation-location: document
+engine: knitr
 ---
+
+:::{style="color: #133163"}
+# **Codebook** 
+:::
+
+## Wilkinson & Pickett (2009)
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE}
+
+source("Data/my_functions.R")
+
+data_read("Data/workshop_data/w2/pickett2009.csv") |> 
+  my_codebook() |> 
+    tinytable::tt(width = c(.2, .45, .075, .075, .2)) |> 
+    tinytable::style_tt(fontsize = 0.8) |> 
+    tinytable::style_tt(j = 1, bold = TRUE)
+```
+
+## Pickett et al. (2024)
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE}
+
+d <- data_read("Data/workshop_data/w2/pickett&al2024.sav")  
+  my_codebook() |> 
+    tinytable::tt(width = c(.2, .45, .075, .075, .2)) |> 
+    tinytable::style_tt(fontsize = 0.8) |> 
+    tinytable::style_tt(j = 1, bold = TRUE)
+```
+
+:::{style="color: #133163"}
+# **Data sources and definitions** 
+:::
 
 ## Income inequality
 
 Data on income inequality in various countries comes from the [*OECD Income Distribution Database (IDD)*](https://www.oecd.org/en/data/datasets/income-and-wealth-distribution-database.html). The *IDD* offers data on levels and trends in income inequality and poverty, and is updated on a rolling basis. The latest update at the time of writing was in June 2025. You can download a summary table with key indicators such as *Gini coefficients*, *income share*, *quintile share ratios* and *poverty rates* for selected years from [{{< iconify vscode-icons file-type-excel2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx). An interactive charting tool of *income inequality* indicators is also available [{{< iconify flat-color-icons line-chart size=xs >}} here](https://www.oecd.org/en/data/indicators/income-inequality.html). Detailed definitions and technical descriptions of their operationalisation is provided [{{< iconify vscode-icons file-type-pdf2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-tor-2012-onwards.pdf). You can read a summary of the database and core inequality indicators in the drop-down box below.
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## OECD data sources and definitions 
 
 ### Equivalised household disposable income
@@ -17,7 +55,12 @@ Achieving comparability in this field is a challenge, as national practices diff
 
 ### Quintile share ratio (disposable income)
 
-The *quintile share ratio* - **or** *S80/S20 ratio* - is the share of all income received by the **top _quintile_** (i.e. 20%) **divided by** the share of the **bottom _quintile_** (i.e. 20%). It is a relatively simple measure to calculate once we have accurate data on the income distribution in a country. For example, in the [{{< iconify vscode-icons file-type-excel2 size=xs >}} IDD key indicators summary table](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx) we find that in Australia in the latest available year earners in the bottom 20% of the income distribution held 7.2% of the total income distributed in that country, while those in the top 20% of the distribution received 40% of that total. If we divide the two ($frac{40}{7.2}$) we obtain `r round(40/7.2, 1)`, which is the value given for the *S80/S20 income share ratio* indicator for Australia in the latest available year.
+The ***quintile share ratio*** - or ***S80/S20 ratio*** - is the share of all income received by the **top _quintile_** (i.e. 20%) **divided by** the share of the **bottom _quintile_** (i.e. 20%). It is a relatively simple measure to calculate once we have accurate data on the income distribution in a country. For example, in the [{{< iconify vscode-icons file-type-excel2 size=xs >}} IDD key indicators summary table](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx) we find that in Australia in the latest available year earners in the bottom 20% of the income distribution held 7.2% of the total income distributed in that country, while those in the top 20% of the distribution received 40% of that total. If we divide the two ($\frac{40}{7.2}$) we obtain `r round(40/7.2, 1)`, which is the value given for the *S80/S20 income share ratio* indicator for Australia in the latest available year (2020).
+
+However, because its *unit* of measurement itself is a *ratio,* it also makes it more difficult to compare one value to another. The best way of approaching it is through some logical examples. Say, for instance, that we want to posit the existence of a perfectly equal society (in terms of income distribution, at least). What would that entail? It would entail that the top-20% earners and the bottom-20% earners own the same share of the total available income. For example, if the top-20% possess 20% of the income distribution and the bottom-20% also possess 20% of the income distribution (with the remaining 60% of income possessed by the middle-60% of earners), then the inequality ratio would be 20÷20=1. The ratio is the same if the "middle-class" is very thin and both the top- and the bottom-20% of earners possess, say, 42% of the income distribution (84% in total): 42÷42=1. To generalise, when two values are equal, their ratio is 1. But what happens if we hypothesise a very unequal society, say one in which the top-20% of the earners share 90% of all income distributed within an economy, while the bottom-20% share on only 0.5% of the income distribution? In such a scenario, the inequality ratio would be 90÷0.5=180; and, in theory, the value of this ratio can be limitlessly high (e.g. 99.999÷0.00005=1,999,980; yes, that is indeed almost 2 million!). The larger the gap, the more extreme the ratio value, and the change between values is **not** "linear".
+
+However, the above scenarios are empirically unrealistic. In fact, if we look at actual data in the table below, the lowest *quintile share ratio* value is 3.1 (Slovakia) and the highest is 33.1 (South Africa). On this more restricted empirical scale (running between around 3 to 34 value points), the difference between the values is more equal, making the changes from one value to another *approximately* linear.
+
 
 ### Gini (disposable income)
 
@@ -27,18 +70,12 @@ The *Gini coefficient* is a measure that compares *cumulative proportions of the
 - **_Country B_**: `80000 100000 90000 120000 140000 70000 70000 90000 120000 120000`
 
 Eyeballing the numbers, which "country" do you think is the more *equal* one, and which is the more *unequal* one? Which one will have the higher *Gini coefficient*? You can copy/paste each set of numbers into the online calculator to get the precise coefficient. But the true reason why we may care about these artificial metrics is that it allows us to ask some further questions, such as: which *individual* would you most like to be from among the twenty income holders listed?; which *country* would you rather like to live in?; if you were to be randomly assigned at birth to a country in a world consisting of several countries such as these two, would you be more comfortable if that world consisted predominantly of countries of type "A" or "B"? Philosophers have been asking these questions - [sometimes very explicitly](https://plato.stanford.edu/entries/rawls/) - for a long time, economists have been working on designing more detailed and accurate measurements and modelling techniques, and sociologists are always interested in understanding how these questions shape the actual lives of people.
-
 ::: 
 
 We can view and download any relevant data through the OECD website's **Data Explorer**, and we selected two measures of income inequality - the *Gini index* and the *S80/S20 ratio* - for all years between 2000-2023 as measured based on various definitions: 
 
-:::{.column-page}
-```{=html}
-<iframe src="https://data-viewer.oecd.org?chartId=ae3eb26a-de3c-4973-a84b-b2e4562753b1" width="100%" height="600px" frameborder="0" data-external="1"></iframe>
-```
-:::
-
 This is the dataset, downloaded to a `.csv` file named `oecd-inequality.csv`, which we will use to obtain the income inequality macro data needed to replicate the analysis presented in @WilkinsonPickett2010SpiritLevelWhy and @PickettEtAl2024SpiritLevel15 (see also @Pickett2024SpiritLevel15TechAppendix).
 
-
+::: {#refs}
+:::
 

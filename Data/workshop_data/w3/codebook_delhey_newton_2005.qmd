@@ -1,85 +1,22 @@
 ---
-page-layout: article
-format:
-  html: 
-    toc: false
+page-layout: full
+toc: false
 ---
 
-:::{.column-page}
+:::{style="color: #133163"}
+# **Codebook** 
+:::
 
-# Codebook: Delhey & Newton 2005
+## Delhey & Newton 2005 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE}
-library(tidyverse)
-library(sjlabelled)
-library(easystats)
-library(tinytable)
 
-my_codebook <- function(df, show_ID = FALSE, show_type = TRUE, show_missing = TRUE) {
+source("Data/my_functions.R")
 
-  # df <- delhey_newton_2005
+datawizard::data_read("Data/workshop_data/w3/delhey&newton2005.rds") |> 
+  my_codebook() |> 
+    tinytable::tt(width = c(.2, .45, .075, .075, .2), height = 0.8) |> 
+    tinytable::style_tt(fontsize = 0.8) |> 
+    tinytable::style_tt(j = 1, bold = TRUE)
 
-  Levels <- c()
-  for (i in names(df)) {
-    Levels <- c(Levels, nlevels(as_factor(df[[i]])))
-  }
-
-  Range <- c()
-  for (i in names(df)) {
-    if (nlevels(as_factor(df[[i]])) > 1) {
-      if (grepl("_nwords", i)) {
-        Range <-  c(Range, paste0(first(get_labels(as_factor(df[[i]]))), " : ", last(get_labels(as_factor(df[[i]]))), " words"))
-        } else 
-          if (nlevels(as_factor(df[[i]])) == 2) {
-            Range <-  c(Range, paste0(first(get_labels(as_factor(df[[i]]))), " | ", last(get_labels(as_factor(df[[i]]))) ) )
-          } else 
-            if (is.numeric(df[[i]]) & !grepl("_nwords", i)) {
-              Range <-  c(Range, paste0(first(get_labels(as_factor(df[[i]]))), " : ", last(get_labels(as_factor(df[[i]])))))
-              } else 
-                Range <-  c(Range, paste0(first(get_labels(as_factor(df[[i]]))), "\U22EF", last(get_labels(as_factor(df[[i]]))) ) )
-    } else 
-      if (grepl("_nwords", i)) {
-        if (Min(df[[i]])==1) {
-          Range <- c(Range, paste(first(get_labels(as_factor(df[[i]]))), "word"))
-          } else Range <- c(Range, paste(first(get_labels(as_factor(df[[i]]))), "words"))
-        } else Range <- c(Range, first(get_labels(as_factor(df[[i]]))))
-  }
-
-  LevelsRange <- paste0(Levels, " (", Range, ")")
-
-  df <- df |> 
-      mutate(across(where(~ is.factor(.x) && nlevels(.x) > 9), 
-                as_numeric)) |> 
-    data_codebook() |> 
-    filter(Name != "") |>
-    rename(
-      `N (%) missing` = Missings,
-      Variable = Name
-    ) |>
-    mutate(Levels = LevelsRange)
-
-  # codebook <- df |>
-
-  #   select(1:5, 10)
-
-  default_cols <- seq_len(min(5, ncol(df)))
-  cols <- default_cols
-  if (!show_ID)       cols <- setdiff(cols, 1)  # hide column 1
-  if (!show_type)     cols <- setdiff(cols, 4)  # hide column 4
-  if (!show_missing)  cols <- setdiff(cols, 5)  # hide column 5
-
-  if (ncol(df) >= 10) cols <- unique(c(cols, 10))
-  cols <- sort(intersect(cols, seq_len(ncol(df))))
-  sel_names <- names(df)[cols]
-
-  codebook <- df |> select(all_of(sel_names))
-}
-
-delhey_newton_2005 <- data_read("Data/workshop_data/w3/delhey_newton_2005.rds")
-
-my_codebook(delhey_newton_2005) |> tinytable::tt() |> 
-  style_tt(fontsize = 0.8) |> 
-  style_tt(j = 1, bold = TRUE)
 ```
-
-:::
