@@ -8,7 +8,6 @@ reference-location: margin
 # engine: knitr
 ---
 
-
 ::: {style="color: #133163"}
 # **Codebook**
 :::
@@ -56,15 +55,11 @@ Data on income inequality in various countries comes from the [*OECD Income Dist
 
 The *OECD Income Distribution database (IDD)* benchmarks and monitors countries’ performance in the field of income inequality and poverty. It contains a number of standardised indicators based on the central concept of “equivalised household disposable income”, i.e. the total income received by the households less the current taxes and transfers they pay, adjusted for household size with an equivalence scale. While household income is only one of the factors shaping people’s economic well-being, it is also the one for which comparable data for all OECD countries are most common. Income distribution has a long-standing tradition among household-level statistics, with regular data collections going back to the 1980s (and sometimes earlier) in many OECD countries.
 
-Achieving comparability in this field is a challenge, as national practices differ widely in terms of concepts, measures, and statistical sources. In order to maximise international comparability as well as inter-temporal consistency of data, the IDD data collection and compilation process is based on a common set of statistical conventions (e.g. on income concepts and components). The information obtained by the OECD through a network of national data providers, via a standardized questionnaire, is based on national sources that are deemed to be most representative for each country. The original data sources for each country and year are listed [{{< iconify vscode-icons file-type-pdf2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-metadata-sources-and-income-years.pdf).
+Achieving comparability in this field is a challenge, as national practices differ widely in terms of concepts, measures, and statistical sources. In order to maximise international comparability as well as inter-temporal consistency of data, the IDD data collection and compilation process is based on a common set of statistical conventions (e.g. on income concepts and components). The information obtained by the OECD through a network of national data providers, via a standardised questionnaire, is based on national sources that are deemed to be most representative for each country. The original data sources for each country and year are listed [{{< iconify vscode-icons file-type-pdf2 size=xs >}} here](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-metadata-sources-and-income-years.pdf).
 
 ### Quintile share ratio (disposable income)
 
-The ***quintile share ratio*** - or ***S80/S20 ratio*** - is the share of all income received by the **top *quintile*** (i.e. 20%) **divided by** the share of the **bottom *quintile*** (i.e. 20%). It is a relatively simple measure to calculate once we have accurate data on the income distribution in a country. For example, in the
-
- [{{< iconify vscode-icons file-type-excel2 size=xs >}} IDD key indicators summary table](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx) 
- 
- we find that in Australia in the latest available year earners in the bottom 20% of the income distribution held 7.2% of the total income distributed in that country, while those in the top 20% of the distribution received 40% of that total. If we divide the two ($\frac{40}{7.2}$) we obtain `r round(40/7.2, 1)`, which is the value given for the *S80/S20 income share ratio* indicator for Australia in the latest available year (2020).
+The ***quintile share ratio*** - or ***S80/S20 ratio*** - is the share of all income received by the **top *quintile*** (i.e. 20%) **divided by** the share of the **bottom *quintile*** (i.e. 20%). It is a relatively simple measure to calculate once we have accurate data on the income distribution in a country. For example, in @tbl-iddtable, we find that in Australia in the latest available year earners in the bottom 20% of the income distribution held 7.2% of the total income distributed in that country, while those in the top 20% of the distribution received 40% of that total. If we divide the two ($\frac{40}{7.2}$) we obtain `r round(40/7.2, 1)`, which is the value given for the *S80/S20 income share ratio* indicator for Australia in the latest available year (2020).
 
 The ***quintile share ratio*** scale, while it is simple to calculate and understand, also has some statistical limitations. The *minimum* value that the scale can take is 1 (because $\frac{10}{10}$ = $\frac{40}{40}$ = $\frac{50}{50}$ = $1$ ), which would describe a perfectly equal society where the richest 20% of the population receives the same amount of total income as the poorest 20%. The *maximum* value, however, is *theoretically* infinite (because the measurement is a ratio, and e.g. $\frac{90}{1}$ = `r 90/1`, but $\frac{99.9}{0.03}$ = `r 99.9/0.03` and $\frac{99.999}{0.00005}$ =`r 99.999/0.00005`), and the higher the value the more unequal a society is, with the total income of the poorest 20% of the population tending to 0. The larger the gap, the more extreme the ratio value.
 
@@ -84,18 +79,15 @@ Eyeballing the numbers, which "country" do you think is the more *equal* one, an
 
 [^1]: Many internationally comparative economic indicators rely on such standardised units as Purchasing Power Parity (PPP) rates, international dollars, Purchasing Power Standards (PPS) or the 'Big Mac Index'
 
-
-### Comparative summary of key inequality indicators <br> (OECD Income Distribution database (IDD), 2022 or most recent year)
 ```{r echo = FALSE, message = FALSE, warning = FALSE, error = FALSE}
+#| tbl-cap:  "Comparative summary of key inequality indicators <br> (OECD Income Distribution database (IDD), 2022 or most recent year) <br> Source: {{< iconify vscode-icons file-type-excel2 size=xs >}} [OECD-IDD](https://www.oecd.org/content/dam/oecd/en/data/datasets/income-and-wealth-distribution-databases/idd-key-indicators.xlsx)"
+#| label: tbl-iddtable
 
 # pak::pkg_install("vincentarelbundock/tinytable")
 
 data_read("Data/raw/macro/OECD/oecd-inequality-summary-2025.csv", skip = 1) |> 
   select(1, 3:6) |> 
   mutate(across(2, round, 2), across(3:5, round, 1)) |> 
-  tt() 
-#   theme_html(
-#     engine="tabulator"
-# )
+  tt()
 
 ```
