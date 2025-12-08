@@ -9319,7 +9319,7 @@ window.Quarto = {
 <section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Intro</h2>
 <p>So far, in all previous exercises, we paid almost exclusive attention to obtaining “point estimates” for our independent (explanatory, predictor) variables. These “point estimates” tell us the average and constant effect that a one-unit change in the predictors have on the outcome (dependent) variable, and do so with seemingly unashamed confidence, despite the fact that, as we have seen in some cases (e.g. Portugal’s <code>trust</code> score), they predict individual data points rather poorly.</p>
-<p>In Exercise 3.2 we focused almost exclusively on interpreting the coefficient estimates we obtained for the two predictor variables (<span class="math inline">\(-7.147\)</span> for <code>Income inequality</code> and <span class="math inline">\(0.174\)</span> for <code>Homicides</code>. You should by now be able to confidently interpret these coefficients; if not, you can return to and consult the detailed explanation given in <em>Exercises 3.1-3</em>.</p>
+<p>In Exercise 3.2 we addressed the research question “How is <em>income inequality</em> (at national level) associated with <em>social trust</em> when we adjust for the potential influence of <em>homicide rates</em>?”, but we focused almost exclusively on interpreting the coefficient estimates we obtained for the two predictor variables (<span class="math inline">\(-7.147\)</span> for <code>Income inequality</code> and <span class="math inline">\(0.174\)</span> for <code>Homicides</code>. You should by now be able to confidently interpret these coefficients; if not, you can return to and consult the detailed explanation given in <em>Exercises 3.1-3</em>.</p>
 <p>But we did not focus at all on some of the other statistics from these models, which could tell us more about how variable (i.e. precise) these estimates are, and what is the probability that these coefficients obtained from relatively small samples can tell us something reliable about the associations/effects we should find in the whole true population from which these samples were drawn?</p>
 <p>We are already given two of these in the standard default output in the columns <strong><em>“Standard Error”</em></strong> and <strong><em>“p”</em></strong>. Another useful such statistic – which relates to both of the previously mentioned ones and is often a more descriptive option –, is the <strong><em>“95% Confidence Intervals”</em></strong>, which is not shown by default but can be requested in the <strong>Statistics</strong> drop-down options set:</p>
 <div id="fig-CI" class="quarto-layout-panel">
@@ -9399,6 +9399,26 @@ Figure 2: Multiple logistic regression in JASP (including 95% Confidence Interv
 <ul>
 <li>Using the lecture slides and the assigned readings, interpret the results focusing on the meaning of the “Standard Error”, “95% CI” and “p” columns</li>
 </ul>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: bringing it all together
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Once we have thought about the <em>precision</em> and the <em>inferential reliability</em> of the estimates obtained from our models, we can summarise our statistical findings concisely. We could describe our findings in these words:</p>
+<blockquote class="blockquote">
+<p>As we can see in <a href="#fig-CI" class="quarto-xref">Figure 1</a>, a multiple linear regression model has shown that while adjusting for the level of <code>Homicides</code> in a given country, <code>Income inequality</code> is negatively associated with <code>Trust</code>. The model estimates that a one-unit increase in <code>Income inequality</code> is associated with a <span class="math inline">\(7.147\)</span>-point average <em>decrease</em> in social trust as measured on the <code>Trust</code> scale. This estimate can be taken as statistically significant (p-value <span class="math inline">\(&lt; 0.001\)</span>), with a 95% Confidence Interval ranging from <span class="math inline">\(-11\)</span> to <span class="math inline">\(-3.3\)</span>. The rate of <code>Homicides</code>, however, proved <u>not to be</u> a statistically significant predictor of <code>Trust</code> (<span class="math inline">\(p=0.483\)</span>, <span class="math inline">\(\text{95% CI}=-0.33 \text{ to } 0.68\)</span>) when adjusting for the effect of <code>Income inequality</code>.</p>
+</blockquote>
+<p>Or:</p>
+<blockquote class="blockquote">
+<p>We fit a multiple logistic regression model to estimate the joint effect of <code>Age</code> and <code>Sex</code> of trust. The results are shown in <a href="#fig-CI-2" class="quarto-xref">Figure 2</a>. We find that, whilst adjusting for the effect of all the other explanatory variables in the model, a positive difference of one year in one’s <code>Age</code> is associated with a <span class="math inline">\(0.6\%\)</span> higher <em>odds</em> of thinking that “most people can be trusted”. However, our 95% Confidence Interval can vary between <span class="math inline">\(0\%\)</span> and <span class="math inline">\(1.3\%\)</span>, and therefore we cannot exclude the possibility that our estimate is due purely to chance, which is confirmed by the p-value of <span class="math inline">\(0.07\)</span>. We cannot, therefore, be confident that our estimate is correct for the wider population. On the other hand, being a female - as opposed to being a male - is statistically significantly (<span class="math inline">\(p&lt;0.001\)</span>) associated with a <span class="math inline">\(35.4\%\)</span> <em>decrease</em> in the odds of thinking that “most people can be trusted” (OR = <span class="math inline">\(0.646\)</span>, 95% CI = <span class="math inline">\(0.505\)</span> to <span class="math inline">\(0.825\)</span>). Put differently, men have a higher probability of trusting other than women do, when adjusting for <code>Age</code>.</p>
+</blockquote>
+</div>
 </div>
 </section>
 <section id="exercise-5.2.-complete-your-analysis-for-assignment-2" class="level2">
